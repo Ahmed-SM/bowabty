@@ -58,7 +58,7 @@ a {
     -webkit-justify-content: space-between !important;
     width: 100%;
     background-color: #3C4652;
-    height: 78px;
+    height: 70px;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.31);
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.31);
@@ -92,7 +92,7 @@ a {
     display: block;
     direction: rtl;
     width: 85px;
-    padding: 12.5px 2px;
+    padding: 10px 2px;
 }
 
 .dropdown {
@@ -889,6 +889,12 @@ input[type=file] {
 
 /*md*/
 @media (min-width: 992px) and (max-width: 1199px) {
+    .hyperlink-decoration i {
+        font-size: 20px;
+    }
+    .hyperlink-decoration a {
+        padding: 10.5px 2px;
+    }
   .carousel-inner .active.left { left: -33%; }
   .carousel-inner .active.right { left: 33%; }
 	.carousel-inner .next        { left:  33%; }
@@ -900,7 +906,12 @@ input[type=file] {
 
 /*lg*/
 @media (min-width: 1200px) {
-
+    .hyperlink-decoration i {
+        font-size: 22px;
+    }
+    .hyperlink-decoration a {
+        padding: 9.5px 2px;
+    }
 	.carousel-inner .next        { left:  25%; }
 	.carousel-inner .prev		     { left: -25%; }
   .carousel-col                { width: 14%; }
