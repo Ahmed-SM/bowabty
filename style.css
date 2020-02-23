@@ -192,12 +192,11 @@ hr.vertical {
 }
 
 .icon-fit {
-    line-height: 6.3 !important;
+    line-height: 5.7 !important;
 }
 
 .text-fit {
-    margin-top: 10px;
-    line-height: 4 !important;
+    line-height: 4.6 !important;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
@@ -263,7 +262,7 @@ hr.vertical {
 }
 
 .vl {
-    margin-top: 26px;
+    margin-top: 20px;
     opacity: 0.4;
     border-left: 1px solid #F6F4F5;
     height: 30px;
