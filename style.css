@@ -85,14 +85,14 @@ a {
 }
 
 .hyperlink-decoration {
-    margin: 0 10px;
+    margin: 1px 10px;
 }
 
 .hyperlink-decoration a {
     display: block;
     direction: rtl;
     width: 85px;
-    padding: 13px 2px;
+    padding: 12.5px 2px;
 }
 
 .dropdown {
