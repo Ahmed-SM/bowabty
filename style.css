@@ -113,10 +113,13 @@ a {
     background-color: #fff;
     color: black !important;
     border-radius: 8px;
+    transition: all 1s;
 }
 
 .header-margin-social i:hover {
     font-size: 17.5px !important;
+    transform: scale(1.02);
+    transition: all 1s;
 }
 
 .dropdown-content {
@@ -139,15 +142,18 @@ a {
     text-decoration: none;
     display: block;
     text-align: right;
+    border-bottom: 2px dashed #C0C0C0;
 }
 
 .dropdown-content a:hover {
     background-color: white;
+    transition: all 1s;
 
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    transition: all 0.5s;
 }
 
 .y-size {
@@ -227,6 +233,7 @@ hr.vertical {
 
 .langauge-select i:hover {
     font-size: 16.2px;
+    transition: all 0.5s;
 }
 
 .C0C0C0 {
@@ -355,6 +362,7 @@ hr.vertical {
 }
 
 .d-container {
+    
     height: 280px;
     width: 45%;
     min-width: 45%;
@@ -619,11 +627,7 @@ select::-ms-expand {
 }
 
 .carousel {
-    padding: 30px 1vw 30px 4vw;
-}
-
-.carousel-2 {
-    padding: 0 !important;
+    
 }
 
 .card-align {
@@ -696,6 +700,7 @@ select::-ms-expand {
 
 .element:hover {
     filter: grayscale(80%);
+    transition: all 0.5s;
 }
 
 .sticker-box {
@@ -754,6 +759,7 @@ input[type=file] {
 
 .send-btn:hover {
     filter: contrast(150%);
+    transition: all 05s;
 }
 
 .side-btn-element {
@@ -763,17 +769,12 @@ input[type=file] {
 
 .side-btn-element:hover {
     filter: contrast(150%);
+    transform: scale(1.05);
+    transition: all 1s;
 }
 
 @media (min-width: 768px) {
-    .carousel {
-        padding: 30px 6vw 30px 6vw;
-    }
-
-    .carousel .item .item-element {
-        width: 14.2857143%;
-        min-width: 14.2857143%;
-    }
+    
 }
 
 @media (max-width:3072px) {
@@ -904,28 +905,40 @@ input[type=file] {
     .active>div:first-child+div {
         display: block;
     }
+    .carousel-2 .carousel-inner .next {
+        left: 45%;
+    }
+
+    .carousel-2 .carousel-inner .prev {
+        left: -45%;
+    }
+
+    .carousel-2 .carousel-col {
+        width: 55%;
+    }
+
 }
 
 /*sm*/
 @media (min-width: 768px) and (max-width: 991px) {
     .carousel-inner .active.left {
-        left: -25%;
+        left: -19%;
     }
 
     .carousel-inner .active.right {
-        left: 25%;
+        left: 19%;
     }
 
     .carousel-inner .next {
-        left: 25%;
+        left: 19%;
     }
 
     .carousel-inner .prev {
-        left: -25%;
+        left: -19%;
     }
 
     .carousel-col {
-        width: 25%;
+        width: 19%;
     }
 
     .active>div:first-child+div {
@@ -938,6 +951,17 @@ input[type=file] {
 
     .active>div:first-child+div+div+div {
         display: block;
+    }
+    .carousel-2 .carousel-inner .next {
+        left: 45%;
+    }
+
+    .carousel-2 .carousel-inner .prev {
+        left: -45%;
+    }
+
+    .carousel-2 .carousel-col {
+        width: 45%;
     }
 }
 
@@ -968,7 +992,7 @@ input[type=file] {
     }
 
     .carousel-col {
-        width: 33%;
+        width: 32%;
     }
 
     .active>div:first-child+div {
@@ -978,6 +1002,18 @@ input[type=file] {
     .active>div:first-child+div+div+div {
         display: block;
     }
+    .carousel-2 .carousel-inner .next {
+        left: 45%;
+    }
+
+    .carousel-2 .carousel-inner .prev {
+        left: -45%;
+    }
+
+    .carousel-2 .carousel-col {
+        width: 45%;
+    }
+
 }
 
 /*lg*/
@@ -999,7 +1035,7 @@ input[type=file] {
     }
 
     .carousel-col {
-        width: 14%;
+        width: 13%;
     }
 
     .active>div:first-child+div {
@@ -1029,9 +1065,55 @@ input[type=file] {
     .active>div:first-child+div+div+div+div+div+div+div {
         display: block;
     }
+     .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div+div {
+        display: block;
+    }
+
+
+    .carousel-2 .carousel-inner .next {
+        left: 33%;
+    }
+
+    .carousel-2 .carousel-inner .prev {
+        left: -33%;
+    }
+
+    .carousel-2 .carousel-col {
+        width: 32%;
+    }
+    
 }
 
 .block {
-    width: 15px;
+    width: 150px;
     height: 230px;
 }
+.block-2 {
+    width: 5px;
+
+}
+
