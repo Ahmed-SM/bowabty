@@ -855,8 +855,7 @@ input[type=file] {
 
 .carousel-control.left,
 .carousel-control.right {
-    margin-right: 40px;
-    margin-left: 32px;
+
     background-image: none;
     opacity: 1;
 }
@@ -878,6 +877,15 @@ input[type=file] {
 }
 
 .active>div:first-child {
+    display: block;
+}
+.active>div:first-child+div+div {
+    display: block;
+}
+.active>div:first-child+div+div+div {
+    display: block;
+}
+.active>div:first-child+div+div+div+div {
     display: block;
 }
 
@@ -906,6 +914,7 @@ input[type=file] {
     .active>div:first-child+div {
         display: block;
     }
+    
     .carousel-2 .carousel-inner .next {
         left: 45%;
     }
@@ -977,26 +986,31 @@ input[type=file] {
     }
 
     .carousel-inner .active.left {
-        left: -33%;
+        left: -18%;
     }
 
     .carousel-inner .active.right {
-        left: 33%;
+        left: 18%;
     }
 
     .carousel-inner .next {
-        left: 33%;
+        left: 18%;
     }
 
     .carousel-inner .prev {
-        left: -33%;
+        left: -18%;
     }
 
     .carousel-col {
-        width: 32%;
+        width: 18.5%;
     }
-
+    .active>div:first-child {
+        display: block;
+    }
     .active>div:first-child+div {
+        display: block;
+    }
+    .active>div:first-child+div+div {
         display: block;
     }
 
@@ -1108,7 +1122,7 @@ input[type=file] {
     }
     
 }
-@media (min-width: 1200px) {
+@media (min-width: 1201px) and (max-width: 1400px) {
     .hyperlink-decoration i {
         font-size: 22px;
     }
@@ -1118,15 +1132,15 @@ input[type=file] {
     }
 
     .carousel-inner .next {
-        left: 25%;
+        left: 11%;
     }
 
     .carousel-inner .prev {
-        left: -25%;
+        left: -11%;
     }
 
     .carousel-col {
-        width: 12.4%;
+        width: 13%;
     }
 
     .active>div:first-child+div {
@@ -1196,11 +1210,14 @@ input[type=file] {
     .carousel-2 .carousel-col {
         width: 32%;
     }
-    
+    .block {
+        width: 73px;
+        height: 230px;
+    }
 }
 
 .block {
-    width: 150px;
+    width: 5.7vw;
     height: 230px;
 }
 .block-2 {
