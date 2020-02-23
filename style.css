@@ -121,7 +121,7 @@ a {
 
 .dropdown-content {
     right: calc(-3px + -0.45vw);
-    top: calc(75px + 0.2vw);
+    top: calc(65px + 0.2vw);
     display: none;
     position: absolute;
     direction: rtl;
