@@ -438,8 +438,6 @@ hr.vertical {
     padding-right: 10px;
     height: 30px;
     border-radius: 5px;
-
-    -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -451,12 +449,10 @@ hr.vertical {
     align-items: center;
     white-space: pre;
     -webkit-rtl-ordering: logical;
-    background-color: -internal-light-dark-color(white, black);
     cursor: default;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(169, 169, 169);
-    border-image: initial;
+    border-color: rgb(169, 169, 169)
 }
 
 select {
