@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
 
     <title> App </title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
         type="text/css" />
     <link href="style.css" rel="stylesheet" />
@@ -214,7 +215,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.5px black; -webkit-text-fill-color: black;">
                                                     حالة طلباتي</h5>
                                             </div>
                                             <div class="element-description">
@@ -237,7 +238,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات متنوعة</h5>
                                             </div>
                                             <div class="element-description">
@@ -260,7 +261,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من مكتب التطوير المؤسسي</h5>
                                             </div>
                                         </div>
@@ -280,7 +281,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الاتصال المؤسسي</h5>
                                             </div>
                                             <div></div>
@@ -301,7 +302,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الموارد البشرية</h5>
                                             </div>
                                             <div></div>
@@ -322,7 +323,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الخدمات الإدارية</h5>
                                             </div>
                                             <div>
@@ -346,7 +347,7 @@
                                             </div>
                                             <div class="element-title">
                                                 <h5
-                                                    style="-webkit-text-stroke: 1px black; -webkit-text-fill-color: black;">
+                                                    style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     مكتبي</h5>
                                             </div>
                                             <div class="element-description">
@@ -377,11 +378,35 @@
                     <h3 id="d-header-box1">قرارات داخلية جديدة</h3>
                     <hr class="hr-d-container">
                 </div>
-                <div id="carousel-2" class="carousel slide" data-ride="carousel-2" data-type="multi2" data-interval="2500">
-                    <div class="carousel-inner">
-                        <div class="item carousel-2 active">
-                            <div class="carousel-col carousel-2" >
-                                <div class="block-2 img-responsive">
+                <div id="carousel-2" class="carousel carousel-2 slide">
+                    <div id="d-content" class="d-content carousel-inner">
+                        <div id="slider" class="item active item-align">
+                            <div style=" display: inline-flex; width: 80%;">
+                                    <div id="d-card" class="d-card">
+                                        <div class="d-card-header">
+                                            <h6>
+                                                1اليوم العالمي للعدالة الاجتماعية
+    
+                                            </h6>
+                                        </div>
+                                        <div>
+                                            <p class="justified">
+                                                لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                                ويُستخدم في
+                                                صناعات المطابع ودور النشر.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 8px; margin: 0;">
+                                                الأربعاء 20 , فبراير
+                                                2019
+                                            </p>
+                                        </div>
+                                        <hr class="d-card-line">
+                                        <div class="text-center">
+                                            <a href="#">اقرأ المزيد</a>
+                                        </div>
+                                    </div>
                                     <div class="d-card">
                                         <div class="d-card-header">
                                             <h6>
@@ -407,130 +432,10 @@
                                             <a href="#">اقرأ المزيد</a>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
-                        </div>
-                        <div class="item carousel-2 ">
-                            <div class="carousel-col carousel-2 " >
-                                <div class="block-2 img-responsive">
-                                    <div class="d-card">
-                                    <div class="d-card-header">
-                                        <h6>
-                                            2اليوم العالمي للعدالة الاجتماعية
-
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        <p class="justified">
-                                            لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                                            ويُستخدم في
-                                            صناعات المطابع ودور النشر.
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p style="font-size: 8px; margin: 0;">
-                                            الأربعاء 20 , فبراير
-                                            2019
-                                        </p>
-                                    </div>
-                                    <hr class="d-card-line">
-                                    <div class="text-center">
-                                        <a href="#">اقرأ المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="item carousel-2 ">
-                            <div class="carousel-col carousel-2 " >
-                                <div class="block-2  img-responsive"><div class="d-card">
-                                    <div class="d-card-header">
-                                        <h6>
-                                            3اليوم العالمي للعدالة الاجتماعية
-
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        <p class="justified">
-                                            لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                                            ويُستخدم في
-                                            صناعات المطابع ودور النشر.
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p style="font-size: 8px; margin: 0;">
-                                            الأربعاء 20 , فبراير
-                                            2019
-                                        </p>
-                                    </div>
-                                    <hr class="d-card-line">
-                                    <div class="text-center">
-                                        <a href="#">اقرأ المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="item carousel-2 ">
-                            <div class="carousel-col carousel-2 " >
-                                <div class="block-2 img-responsive"><div class="d-card">
-                                    <div class="d-card-header">
-                                        <h6>
-                                            4اليوم العالمي للعدالة الاجتماعية
-
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        <p class="justified">
-                                            لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                                            ويُستخدم في
-                                            صناعات المطابع ودور النشر.
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p style="font-size: 8px; margin: 0;">
-                                            الأربعاء 20 , فبراير
-                                            2019
-                                        </p>
-                                    </div>
-                                    <hr class="d-card-line">
-                                    <div class="text-center">
-                                        <a href="#">اقرأ المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="item carousel-2 ">
-                            <div class="carousel-col carousel-2 " >
-                                <div class="block-2  img-responsive"><div class="d-card">
-                                    <div class="d-card-header">
-                                        <h6>
-                                            5اليوم العالمي للعدالة الاجتماعية
-
-                                        </h6>
-                                    </div>
-                                    <div>
-                                        <p class="justified">
-                                            لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                                            ويُستخدم في
-                                            صناعات المطابع ودور النشر.
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p style="font-size: 8px; margin: 0;">
-                                            الأربعاء 20 , فبراير
-                                            2019
-                                        </p>
-                                    </div>
-                                    <hr class="d-card-line">
-                                    <div class="text-center">
-                                        <a href="#">اقرأ المزيد</a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+                                                   
                     </div>
     
                     <a role="button" href="#carousel-2" data-slide="next"

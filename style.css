@@ -299,7 +299,6 @@ hr.vertical {
 }
 
 .element-title h5 {
-    font-weight: bold;
     font-size: 15px;
 }
 
@@ -511,7 +510,6 @@ select::-ms-expand {
 .send-btn {
     display: inline-block;
     margin-bottom: 0;
-    font-weight: bold;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -627,10 +625,6 @@ select::-ms-expand {
     display: block;
 }
 
-.carousel {
-    
-}
-
 .card-align {
     display: inline !important;
 
@@ -659,10 +653,6 @@ select::-ms-expand {
     margin-right: -19px;
 }
 
-.carousel-control svg {
-    margin-top: 4.5px;
-    width: 15px;
-}
 
 .carousel .carousel-indicators li {
     background: #cecece;
@@ -672,11 +662,7 @@ select::-ms-expand {
     background: #CACACA;
 }
 
-.carousel .item .row {
-    clear: both;
-    margin: 0;
 
-}
 
 .carousel .item .item-element {
     float: right;
@@ -915,17 +901,6 @@ input[type=file] {
         display: block;
     }
     
-    .carousel-2 .carousel-inner .next {
-        left: 45%;
-    }
-
-    .carousel-2 .carousel-inner .prev {
-        left: -45%;
-    }
-
-    .carousel-2 .carousel-col {
-        width: 55%;
-    }
 
 }
 
@@ -961,17 +936,6 @@ input[type=file] {
 
     .active>div:first-child+div+div+div {
         display: block;
-    }
-    .carousel-2 .carousel-inner .next {
-        left: 45%;
-    }
-
-    .carousel-2 .carousel-inner .prev {
-        left: -45%;
-    }
-
-    .carousel-2 .carousel-col {
-        width: 45%;
     }
 }
 
@@ -1016,17 +980,6 @@ input[type=file] {
 
     .active>div:first-child+div+div+div {
         display: block;
-    }
-    .carousel-2 .carousel-inner .next {
-        left: 45%;
-    }
-
-    .carousel-2 .carousel-inner .prev {
-        left: -45%;
-    }
-
-    .carousel-2 .carousel-col {
-        width: 45%;
     }
 
 }
@@ -1080,46 +1033,7 @@ input[type=file] {
     .active>div:first-child+div+div+div+div+div+div+div {
         display: block;
     }
-     .active>div:first-child+div {
-        display: block;
-    }
 
-    .active>div:first-child+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div+div+div+div {
-        display: block;
-    }
-
-
-    .carousel-2 .carousel-inner .next {
-        left: 33%;
-    }
-
-    .carousel-2 .carousel-inner .prev {
-        left: -33%;
-    }
-
-    .carousel-2 .carousel-col {
-        width: 32%;
-    }
     
 }
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -1170,46 +1084,7 @@ input[type=file] {
     .active>div:first-child+div+div+div+div+div+div+div {
         display: block;
     }
-     .active>div:first-child+div {
-        display: block;
-    }
 
-    .active>div:first-child+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div+div+div {
-        display: block;
-    }
-
-    .active>div:first-child+div+div+div+div+div+div+div {
-        display: block;
-    }
-
-
-    .carousel-2 .carousel-inner .next {
-        left: 33%;
-    }
-
-    .carousel-2 .carousel-inner .prev {
-        left: -33%;
-    }
-
-    .carousel-2 .carousel-col {
-        width: 32%;
-    }
     .block {
         width: 73px;
         height: 230px;
