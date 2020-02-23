@@ -859,7 +859,7 @@ input[type=file] {
     position: relative; 
     min-height: 1px; 
     padding: 5px; 
-    float: right;
+    float: left;
  }
 
  .active > div { display:none; }
