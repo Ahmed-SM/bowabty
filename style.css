@@ -1108,6 +1108,96 @@ input[type=file] {
     }
     
 }
+@media (min-width: 1200px) {
+    .hyperlink-decoration i {
+        font-size: 22px;
+    }
+
+    .hyperlink-decoration a {
+        padding: 9.5px 2px;
+    }
+
+    .carousel-inner .next {
+        left: 25%;
+    }
+
+    .carousel-inner .prev {
+        left: -25%;
+    }
+
+    .carousel-col {
+        width: 12.4%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div+div {
+        display: block;
+    }
+     .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div+div {
+        display: block;
+    }
+
+
+    .carousel-2 .carousel-inner .next {
+        left: 33%;
+    }
+
+    .carousel-2 .carousel-inner .prev {
+        left: -33%;
+    }
+
+    .carousel-2 .carousel-col {
+        width: 32%;
+    }
+    
+}
 
 .block {
     width: 150px;
