@@ -445,7 +445,6 @@ hr.vertical {
     text-shadow: none;
     display: inline-block;
     text-align: start;
-    -webkit-appearance: menulist;
     align-items: center;
     white-space: pre;
     -webkit-rtl-ordering: logical;
