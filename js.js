@@ -260,6 +260,10 @@ var dictionary = {
 
 
 };
+$('#file').change(function() {
+    var file = $('#file')[0].files[0].name;
+    $('.file-placeholder').text(file);
+  });
 
 // var width = $(window).width();
 // $(window).on('resize', function() {
