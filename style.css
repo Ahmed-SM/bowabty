@@ -1,4 +1,8 @@
-html, body { height: 95% }
+html,
+body {
+    height: 95%
+}
+
 body {
     margin: 0 !important;
     font-family: 'Cocon Next Arabic', Sans-Serif !important;
@@ -124,8 +128,8 @@ a {
 }
 
 .dropdown-content {
-    right: calc(-3px + -0.45vw);
-    top: calc(65px + 0.2vw);
+    right: calc(-3px + -15%);
+    top: calc(65px + 6.5%);
     display: none;
     position: absolute;
     direction: rtl;
@@ -304,6 +308,8 @@ hr.vertical {
 
 .element-description {
     display: inline;
+    overflow-wrap: break-word;
+
 
 }
 
@@ -362,7 +368,7 @@ hr.vertical {
 }
 
 .d-container {
-    
+
     height: 300px;
     width: 45%;
     min-width: 45%;
@@ -760,9 +766,7 @@ input[type=file] {
     transition: all 0.2s;
 }
 
-@media (min-width: 768px) {
-    
-}
+@media (min-width: 768px) {}
 
 @media (max-width:3072px) {
     .empty-space {
@@ -858,6 +862,10 @@ input[type=file] {
     float: left;
 }
 
+.carousel-col {
+    width: 33%;
+}
+
 .active>div {
     display: none;
 }
@@ -865,15 +873,12 @@ input[type=file] {
 .active>div:first-child {
     display: block;
 }
-.active>div:first-child+div+div {
+
+.active>div:first-child+div {
     display: block;
 }
-.active>div:first-child+div+div+div {
-    display: block;
-}
-.active>div:first-child+div+div+div+div {
-    display: block;
-}
+
+
 
 /*xs*/
 @media (max-width: 767px) {
@@ -900,7 +905,11 @@ input[type=file] {
     .active>div:first-child+div {
         display: block;
     }
-    
+
+    .block {
+        width: 95px !important;
+
+    }
 
 }
 
@@ -923,7 +932,7 @@ input[type=file] {
     }
 
     .carousel-col {
-        width: 19%;
+        width: 20%;
     }
 
     .active>div:first-child+div {
@@ -936,6 +945,11 @@ input[type=file] {
 
     .active>div:first-child+div+div+div {
         display: block;
+    }
+
+    .block {
+        width: 120px !important;
+
     }
 }
 
@@ -968,18 +982,26 @@ input[type=file] {
     .carousel-col {
         width: 18.5%;
     }
+
     .active>div:first-child {
         display: block;
     }
+
     .active>div:first-child+div {
         display: block;
     }
+
     .active>div:first-child+div+div {
         display: block;
     }
 
     .active>div:first-child+div+div+div {
         display: block;
+    }
+
+    .block {
+        width: 200px !important;
+
     }
 
 }
@@ -1034,8 +1056,9 @@ input[type=file] {
         display: block;
     }
 
-    
+
 }
+
 @media (min-width: 1201px) and (max-width: 1400px) {
     .hyperlink-decoration i {
         font-size: 22px;
@@ -1095,23 +1118,13 @@ input[type=file] {
     width: 5.7vw;
     height: 230px;
 }
+
 .block-2 {
     width: 5px;
 
 }
 
-@media 
-  (max-device-width: 800px) 
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
+@media (max-device-width: 800px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* Landscape */
-@media 
-  (max-device-width: 1280px) 
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
+@media (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}

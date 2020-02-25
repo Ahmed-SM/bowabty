@@ -4,11 +4,14 @@
 <head>
     <meta charset="utf-8" />
 
-    <title> App </title>
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Bowabty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+    <link href="style.css" rel="stylesheet" />
+    
     <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
         type="text/css" />
-    <link href="style.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -27,7 +30,7 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <div>
-                        <img class="no-highlight" src="./notif.png" alt="" width="500">
+                        <img class="no-highlight" src="./imgs/notif.png" alt="" width="500">
                     </div>
                     <dir>
                         <h1>يعلن مكتب التطوير المؤسسي عن فتح باب الترشح لجائزة الموظف المتميز</h1>
@@ -40,16 +43,16 @@
     <header class="header">
         <div>
             <a href="#">
-                <img src="./logo.png" alt="" width="280">
+                <img src="./imgs/logo.png" alt="" width="280">
             </a>
         </div>
         <div class="welcome-section">
-            <h5 id="welcome-element">اهلا بك</h5>
+            <h5 data-translate="welcome" id="welcome-element">اهلا بك</h5>
             <h5 id="logged-user">Aamna Ahmed AlNaqbii</h5>
         </div>
         <div>
             <a href="#">
-                <img src="./RAK.png" alt="" width="240">
+                <img src="./imgs/RAK.png" alt="" width="240">
             </a>
         </div>
     </header>
@@ -58,61 +61,61 @@
             <div class="header-margin hyperlink-decoration" style="line-height:1.6;">
                 <a href="#">
                     <i class="fa fa-life-ring"></i>
-                    <div>الإجتماعات</div>
+                    <div data-translate="meeting">الإجتماعات</div>
                 </a>
             </div>
             <div class="header-margin dropdown hyperlink-decoration" style="line-height:1.6;">
                 <a href="javascript:void(0)" class="dropbtn">
                     <i class="fa fa-tasks"></i>
                     <div>
-                        المهام
+                        <span data-translate="task">المهام</span>
                         <i class="fas fa-sort-down arrow-size"></i>
                     </div>
                 </a>
                 <div class="dropdown-content">
-                    <a href="#">اختيار</a>
-                    <a href="#">اختيار</a>
-                    <a href="#">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
                 </div>
             </div>
             <div class="header-margin hyperlink-decoration">
                 <a href="#">
                     <i class="fa fa-battery-half"></i>
-                    <div>حالة الطلب</div>
+                    <div data-translate="order-status">حالة الطلب</div>
                 </a>
             </div>
             <div class="header-margin hyperlink-decoration">
                 <a href="#">
                     <i class="fa fa-cog"></i>
-                    <div>إدارة النظام</div>
+                    <div data-translate="administration">إدارة النظام</div>
                 </a>
             </div>
             <div class="header-margin dropdown hyperlink-decoration">
                 <a href="javascript:void(0)" class="dropbtn">
                     <i class="fa fa-info"></i>
                     <div>
-                        أخرى
+                        <span data-translate="other">أخرى</span>
                         <i class="fas fa-sort-down arrow-size"></i>
                     </div>
                 </a>
                 <div class="dropdown-content">
-                    <a href="#">اختيار</a>
-                    <a href="#">اختيار</a>
-                    <a href="#">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
                 </div>
             </div>
             <div class="header-margin dropdown hyperlink-decoration">
                 <a href="javascript:void(0)" class="dropbtn">
                     <i class="fa fa-file-text-o"></i>
                     <div>
-                        التقارير
+                        <span data-translate="report">التقارير</span>
                         <i class="fas fa-sort-down arrow-size"></i>
                     </div>
                 </a>
                 <div class="dropdown-content">
-                    <a href="#">اختيار</a>
-                    <a href="#">اختيار</a>
-                    <a href="#">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
                 </div>
             </div>
         </div>
@@ -142,7 +145,7 @@
             <div class="langauge-select">
                 <div class="vl"></div>
                 <div class="text-fit">
-                    <a href="/en.html">
+                    <a href="#">
                         <i id="language-choice">English</i>
                     </a>
                 </div>
@@ -151,7 +154,7 @@
             <div class="header-margin hyperlink-decoration">
                 <a href="#">
                     <i class="fa fa-sliders-h"></i>
-                    <div> الاعدادات</div>
+                    <div data-translate="setting"> الاعدادات</div>
                 </a>
             </div>
         </div>
@@ -160,7 +163,7 @@
         <div class="a-container">
             <div class="user-details">
                 <div class="user-picture">
-                    <img src="Capture.JPG" alt="">
+                    <img src="/imgs/photo.JPG" alt="">
                 </div>
                 <div class="user-info">
                     <div class="user-name">
@@ -173,12 +176,12 @@
             </div>
             <div class="app-title">
                 <div>
-                    <h1
+                    <h1 data-translate="title"
                         style=" font-weight: bold; color: #3C4652; -webkit-text-stroke: 0.1px #3C4652; -webkit-text-fill-color: #3C4652;">
                         خدماتي</h1>
                 </div>
                 <div>
-                    <h4 style="color: #6D6D6D; font-size: 19.8px;">
+                    <h4 data-translate="title-child" style="color: #6D6D6D; font-size: 19.8px;">
                         لوريم إيبسوم هو ببساطة نص شكلي
                     </h4>
                 </div>
@@ -189,15 +192,15 @@
                 </div>
                 <div class="side-btn-element">
                     <a href="#">
-                        <img border="0" alt="" src="icon-book.JPG" width="40">
+                        <img border="0" alt="" src="./imgs/icon-book.JPG" width="40">
                     </a>
-                    التحويلات
+                    <div data-translate="contact">التحويلات</div>
                 </div>
                 <div class="side-btn-element">
                     <a href="#">
-                        <img border="0" alt="" src="icon-note.JPG" width="36">
+                        <img border="0" alt="" src="./imgs/icon-note.JPG" width="36">
                     </a>
-                    ملاحظاتي
+                    <div data-translate="note">ملاحظاتي</div>
                 </div>
             </div>
         </div>
@@ -211,15 +214,15 @@
                                     <a href="#">
                                         <div class="element">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./paper-time.png" alt="" width="52">
+                                                <img src="./imgs/paper-time.png" alt="" width="52">
                                             </div>
                                             <div class="element-title">
-                                                <h5
+                                                <h5 data-translate="status-requests"
                                                     style="-webkit-text-stroke: 0.5px black; -webkit-text-fill-color: black;">
                                                     حالة طلباتي</h5>
                                             </div>
                                             <div class="element-description">
-                                                <h6> تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
+                                                <h6 data-translate="element-description" dir="auto" > تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -234,15 +237,15 @@
                                     <a href="#">
                                         <div class="element">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./art-bag.png" alt="" width="38">
+                                                <img src="./imgs/art-bag.png" alt="" width="38">
                                             </div>
                                             <div class="element-title">
-                                                <h5
+                                                <h5 data-translate="varied-requests"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات متنوعة</h5>
                                             </div>
                                             <div class="element-description">
-                                                <h6> تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
+                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -257,10 +260,10 @@
                                     <a href="#">
                                         <div class="element">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./doc-green.png" alt="" width="40">
+                                                <img src="./imgs/doc-green.png" alt="" width="40">
                                             </div>
                                             <div class="element-title">
-                                                <h5
+                                                <h5 data-translate="office-requests"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من مكتب التطوير المؤسسي</h5>
                                             </div>
@@ -277,10 +280,10 @@
                                     <div class="element">
                                         <a href="#">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./doc-dark-green.png" alt="" width="40">
+                                                <img src="./imgs/doc-dark-green.png" alt="" width="40">
                                             </div>
                                             <div class="element-title">
-                                                <h5
+                                                <h5 data-translate="communication-requests"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الاتصال المؤسسي</h5>
                                             </div>
@@ -298,10 +301,10 @@
                                     <a href="#">
                                         <div class="element">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./doc-yellow.png" alt="" width="40">
+                                                <img src="./imgs/doc-yellow.png" alt="" width="40">
                                             </div>
                                             <div class="element-title">
-                                                <h5
+                                                <h5 data-translate="human-requests"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الموارد البشرية</h5>
                                             </div>
@@ -319,10 +322,11 @@
                                     <a href="#">
                                         <div class="element">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./doc-blue.png" alt="" width="40">
+                                                <img src="./imgs/doc-blue.png" alt="" width="40">
                                             </div>
                                             <div class="element-title">
                                                 <h5
+                                                data-translate="administrative-requests"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الخدمات الإدارية</h5>
                                             </div>
@@ -343,15 +347,16 @@
                                     <a href="#">
                                         <div class="element">
                                             <div class="pl30 pr30 pt30">
-                                                <img src="./desk.png" alt="" width="45">
+                                                <img src="./imgs/desk.png" alt="" width="45">
                                             </div>
                                             <div class="element-title">
-                                                <h5
+                                                <h5 data-translate="my-office"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     مكتبي</h5>
                                             </div>
                                             <div class="element-description">
-                                                <h6> تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
+                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات القرطاسية صيانة
+                                                    المكتب والمعدات الأخرى في المكتب..</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -375,79 +380,78 @@
         <div class="c-container">
             <div class="d-container border-bottom-blue">
                 <div class="d-header ">
-                    <h3 id="d-header-box1">قرارات داخلية جديدة</h3>
+                    <h3 id="d-header-box1" data-translate="decision">قرارات داخلية جديدة</h3>
                     <hr class="hr-d-container">
                 </div>
                 <div id="carousel-2" class="carousel carousel-2 slide">
                     <div id="d-content" class="d-content carousel-inner">
                         <div id="slider" class="item active item-align">
                             <div style=" display: inline-flex; width: 80%;">
-                                    <div id="d-card" class="d-card">
-                                        <div class="d-card-header">
-                                            <h6>
-                                                1اليوم العالمي للعدالة الاجتماعية
-    
-                                            </h6>
-                                        </div>
-                                        <div>
-                                            <p class="justified">
-                                                لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                                                ويُستخدم في
-                                                صناعات المطابع ودور النشر.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p style="font-size: 8px; margin: 0;">
-                                                الأربعاء 20 , فبراير
-                                                2019
-                                            </p>
-                                        </div>
-                                        <hr class="d-card-line">
-                                        <div class="text-center">
-                                            <a href="#">اقرأ المزيد</a>
-                                        </div>
+                                <div id="d-card" class="d-card">
+                                    <div class="d-card-header">
+                                        <h6 dir="auto">
+                                            اليوم العالمي للعدالة الاجتماعية
+
+                                        </h6>
                                     </div>
-                                    <div class="d-card">
-                                        <div class="d-card-header">
-                                            <h6>
-                                                1اليوم العالمي للعدالة الاجتماعية
-    
-                                            </h6>
-                                        </div>
-                                        <div>
-                                            <p class="justified">
-                                                لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                                                ويُستخدم في
-                                                صناعات المطابع ودور النشر.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p style="font-size: 8px; margin: 0;">
-                                                الأربعاء 20 , فبراير
-                                                2019
-                                            </p>
-                                        </div>
-                                        <hr class="d-card-line">
-                                        <div class="text-center">
-                                            <a href="#">اقرأ المزيد</a>
-                                        </div>
+                                    <div>
+                                        <p class="justified" dir="auto">
+                                            لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                            ويُستخدم في
+                                            صناعات المطابع ودور النشر.
+                                        </p>
                                     </div>
-                                    
+                                    <div>
+                                        <p style="font-size: 8px; margin: 0;" dir="auto">
+                                            الأربعاء 20 , فبراير
+                                            2019
+                                        </p>
+                                    </div>
+                                    <hr class="d-card-line">
+                                    <div class="text-center">
+                                        <a data-translate="read-more" href="#">اقرأ المزيد</a>
+                                    </div>
                                 </div>
+                                <div class="d-card">
+                                    <div class="d-card-header">
+                                        <h6  dir="auto">
+                                            اليوم العالمي للعدالة الاجتماعي 
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p class="justified" dir="auto">
+                                            لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                            ويُستخدم في
+                                            صناعات المطابع ودور النشر.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p style="font-size: 8px; margin: 0;" dir="auto">
+                                            الأربعاء 20 , فبراير
+                                            2019
+                                        </p>
+                                    </div>
+                                    <hr class="d-card-line">
+                                    <div class="text-center">
+                                        <a data-translate="read-more" href="#">اقرأ المزيد</a>
+                                    </div>
+                                </div>
+
                             </div>
-                                                   
+                        </div>
+
                     </div>
-    
-                    <a role="button" href="#carousel-2" data-slide="next"
-                        class=" carousel-control carousel-control-2" style="left:1.4vw">
+                    <a role="button" href="#carousel-2" data-slide="next" id="slider-arrow"
+                        class="carousel-control carousel-control-2" style="left:1.4vw">
                         <i class="fas fa-chevron-left C0C0C0"></i>
                     </a>
+
                 </div>
             </div>
 
             <div class="d-container border-bottom-black">
                 <div class="d-header">
-                    <h3 id="d-header-box2">تقديم مقترح</h3>
+                    <h3 id="d-header-box2" data-translate="suggestion">تقديم مقترح</h3>
                     <hr class="hr-d-container">
 
                 </div>
@@ -455,19 +459,21 @@
                     <form id="feedback-form" action="/">
                         <div class="input-group-a">
                             <div class="column">
-                                <label for="">عنوان المقترح</label>
-                                <input class="input-border w330" type="text" placeholder="عنوان المقترح">
+                                <label data-translate="suggested-title" for="">عنوان المقترح</label>
+                                <input id="suggestion-title-placeholder" class="input-border w330" type="text" 
+                                    data-translate="suggested-title" placeholder="عنوان المقترح">
                             </div>
                         </div>
                         <div class="input-group-b ">
                             <div class="column ml25 selectdiv">
-                                <label for="">مصدر الاقتراح</label>
+                                <label data-translate="suggestion-origin" for="">مصدر الاقتراح</label>
                                 <select class="input-border w155" name="" id="">
-                                    <option value="فكرة شخصية" selected>فكرة شخصية</option>
+                                    <option value="فكرة شخصية" data-translate="suggestion-origin-option-1" selected>فكرة
+                                        شخصية</option>
                                 </select>
                             </div>
                             <div class="column">
-                                <label for="file">المرفقات</label>
+                                <label data-translate="attachemnt" for="file">المرفقات</label>
                                 <div class="input-file input-border w155">
                                     <div>
                                         <input name="file" type="file" id="file">
@@ -486,11 +492,12 @@
                                         </svg>
                                     </svg>
                                 </div>
-                                <label class="file-placeholder" for="file">المرفقات</label>
+                                <label class="file-placeholder" data-translate="attachemnt" for="file">المرفقات</label>
                             </div>
                         </div>
                         <div>
-                            <button type="submit" id="submit-btn" class="send-btn">ارسال</button>
+                            <button type="submit" id="submit-btn" data-translate="send-btn"
+                                class="send-btn">ارسال</button>
                         </div>
                     </form>
                 </div>
@@ -516,7 +523,7 @@
         </div>
     </div>
     <span type="inupt" data-toggle="modal" data-target="#Modal"
-        style="position: absolute; top: 0; cursor: pointer;">موودال</span>
+        style="position: absolute; top: 0; cursor: pointer; writing-mode:vertical-rl;">موودال</span>
     <script src="js.js"></script>
 </body>
 
