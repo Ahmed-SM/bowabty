@@ -37,28 +37,28 @@ a {
     text-align: center;
     padding: 100px !important;
 }
-
-.header {
-    display: inline-flex;
+.flex-row-reverse{
+    display: inline-flex !important;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
+}
+.user-select{
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header {
     width: 100%;
     padding: 0 30px;
     justify-content: space-between;
     text-align: center;
     height: 73px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .nav-header {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
     justify-content: space-between;
     -webkit-justify-content: space-between !important;
     width: 100%;
@@ -99,7 +99,9 @@ a {
     width: 85px;
     padding: 10px 2px;
 }
-
+.line-height{
+    line-height:1.6 !important;
+}
 .dropdown {
     list-style-type: none;
     text-decoration: none;
@@ -216,9 +218,6 @@ hr.vertical {
 }
 
 .social-box {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
     justify-content: space-around;
     width: 200px;
 }
@@ -246,17 +245,12 @@ hr.vertical {
 }
 
 .nav-left-side {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+
     width: 200px;
     margin-left: 150px;
 }
 
 .nav-right-side {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
     justify-content: space-around;
     margin-right: 40px;
 }
@@ -318,6 +312,7 @@ hr.vertical {
     text-align: justify;
     text-align-last: justify;
     opacity: 0.7;
+    min-height: 68px;
 }
 
 .element-description h6 {
@@ -336,9 +331,6 @@ hr.vertical {
     margin: 25px 0 0 0;
     padding: 0px 20px;
     background-color: white;
-    display: inline-flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
     width: 100%;
     justify-content: space-around;
     -webkit-justify-content: space-around !important;
@@ -387,7 +379,10 @@ hr.vertical {
 .item-align {
     padding: 0 2vw 0 0;
 }
-
+.slider-inner{
+    display: inline-flex !important;
+     width: 80% !important;
+}
 .d-card {
     padding: 10px;
     border-radius: 5px;
@@ -400,6 +395,8 @@ hr.vertical {
 .d-card-header {
     -webkit-text-stroke: 0.4px black;
     -webkit-text-fill-color: black;
+    min-height: 30px;
+
 
 }
 
@@ -447,14 +444,6 @@ hr.vertical {
 .ml25 {
     margin-left: 2.5vw;
 }
-
-.no-highlight {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 .w330 {
     width: 33vw;
     max-width: 33vw;
@@ -567,9 +556,6 @@ select::-ms-expand {
 
 .user-details,
 .side-btns {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
@@ -597,6 +583,16 @@ select::-ms-expand {
 
 .header-margin-social i {
     font-size: 25px;
+}
+.sticker-box i{
+    font-size: 25px;
+}
+.sticker-box div{
+    font-size: 8px;
+}
+.d-card-date{
+    font-size: 8px; 
+    margin: 0;
 }
 
 .user-details img {
@@ -703,12 +699,6 @@ select::-ms-expand {
     font-weight: 900;
     text-align: center;
     margin: -35px 10px 0 10px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .support {
@@ -738,14 +728,6 @@ input[type=file] {
     font-size: calc(1px + 0.65vw);
     padding-left: 10px;
     opacity: 0;
-}
-.no-user-select{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .input-file {

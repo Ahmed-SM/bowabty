@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
 
     <title>Bowabty</title>
-    
+
     <link href="style.css" rel="stylesheet" />
-    
+
     <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
         type="text/css" />
 
@@ -29,7 +29,7 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <div>
-                        <img class="no-highlight" src="./imgs/notif.png" alt="" width="500">
+                        <img class="user-select" src="./imgs/notif.png" alt="" width="500">
                     </div>
                     <dir>
                         <h1>يعلن مكتب التطوير المؤسسي عن فتح باب الترشح لجائزة الموظف المتميز</h1>
@@ -39,7 +39,7 @@
 
         </div>
     </div>
-    <header class="header">
+    <header class="header flex-row-reverse user-select">
         <div>
             <a href="#">
                 <img src="./imgs/logo.png" alt="" width="280">
@@ -55,15 +55,15 @@
             </a>
         </div>
     </header>
-    <nav class="nav-header">
-        <div class="nav-right-side">
-            <div class="header-margin hyperlink-decoration" style="line-height:1.6;">
+    <nav class="nav-header flex-row-reverse">
+        <div class="nav-right-side flex-row-reverse">
+            <div class="header-margin hyperlink-decoration line-height"> 
                 <a href="#">
                     <i class="fa fa-life-ring"></i>
                     <div data-translate="meeting">الإجتماعات</div>
                 </a>
             </div>
-            <div class="header-margin dropdown hyperlink-decoration" style="line-height:1.6;">
+            <div class="header-margin dropdown hyperlink-decoration line-height">
                 <a href="javascript:void(0)" class="dropbtn">
                     <i class="fa fa-tasks"></i>
                     <div>
@@ -118,8 +118,8 @@
                 </div>
             </div>
         </div>
-        <div class="nav-left-side">
-            <div class="social-box">
+        <div class="nav-left-side flex-row-reverse">
+            <div class="social-box flex-row-reverse">
                 <div class="icon-fit header-margin-social">
                     <a href="#">
                         <i class="fab fa-youtube y-size"></i>
@@ -159,8 +159,8 @@
         </div>
     </nav>
     <div class="p-container">
-        <div class="a-container">
-            <div class="user-details">
+        <div class="a-container flex-row-reverse">
+            <div class="user-details flex-row-reverse">
                 <div class="user-picture">
                     <img src="./imgs/photo.JPG" alt="">
                 </div>
@@ -180,12 +180,12 @@
                         خدماتي</h1>
                 </div>
                 <div>
-                    <h4 data-translate="title-child" style="color: #6D6D6D; font-size: 19.8px;">
+                    <h4 id="title-child" data-translate="title-child" style="color: #6D6D6D; font-size: 19.8px;">
                         لوريم إيبسوم هو ببساطة نص شكلي
                     </h4>
                 </div>
             </div>
-            <div class="side-btns text-center">
+            <div class="side-btns text-center flex-row-reverse">
                 <div class="nav-space">
 
                 </div>
@@ -221,7 +221,8 @@
                                                     حالة طلباتي</h5>
                                             </div>
                                             <div class="element-description">
-                                                <h6 data-translate="element-description" dir="auto" > تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
+                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات
+                                                    القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -244,7 +245,8 @@
                                                     طلبات متنوعة</h5>
                                             </div>
                                             <div class="element-description">
-                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
+                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات
+                                                    القرطاسية صيانة المكتب والمعدات الأخرى في المكتب..</h6>
                                             </div>
                                         </div>
                                     </a>
@@ -324,8 +326,7 @@
                                                 <img src="./imgs/doc-blue.png" alt="" width="40">
                                             </div>
                                             <div class="element-title">
-                                                <h5
-                                                data-translate="administrative-requests"
+                                                <h5 data-translate="administrative-requests"
                                                     style="-webkit-text-stroke: 0.8px black; -webkit-text-fill-color: black;">
                                                     طلبات من قسم الخدمات الإدارية</h5>
                                             </div>
@@ -354,7 +355,8 @@
                                                     مكتبي</h5>
                                             </div>
                                             <div class="element-description">
-                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات القرطاسية صيانة
+                                                <h6 data-translate="element-description" dir="auto"> تشمل طلبات
+                                                    القرطاسية صيانة
                                                     المكتب والمعدات الأخرى في المكتب..</h6>
                                             </div>
                                         </div>
@@ -385,12 +387,11 @@
                 <div id="carousel-2" class="carousel carousel-2 slide">
                     <div id="d-content" class="d-content carousel-inner">
                         <div id="slider" class="item active item-align">
-                            <div style=" display: inline-flex; width: 80%;">
+                            <div class="slider-inner">
                                 <div id="d-card" class="d-card">
                                     <div class="d-card-header">
                                         <h6 dir="auto">
                                             اليوم العالمي للعدالة الاجتماعية
-
                                         </h6>
                                     </div>
                                     <div>
@@ -401,7 +402,7 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <p style="font-size: 8px; margin: 0;" dir="auto">
+                                        <p class="d-card-date" dir="auto">
                                             الأربعاء 20 , فبراير
                                             2019
                                         </p>
@@ -413,8 +414,8 @@
                                 </div>
                                 <div class="d-card">
                                     <div class="d-card-header">
-                                        <h6  dir="auto">
-                                            اليوم العالمي للعدالة الاجتماعي 
+                                        <h6 dir="auto">
+                                            اليوم العالمي للعدالة الاجتماعي
                                         </h6>
                                     </div>
                                     <div>
@@ -425,7 +426,7 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <p style="font-size: 8px; margin: 0;" dir="auto">
+                                        <p class="d-card-date" dir="auto">
                                             الأربعاء 20 , فبراير
                                             2019
                                         </p>
@@ -435,10 +436,8 @@
                                         <a data-translate="read-more" href="#">اقرأ المزيد</a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                     <a role="button" href="#carousel-2" data-slide="next" id="slider-arrow"
                         class="carousel-control carousel-control-2" style="left:1.4vw">
@@ -459,7 +458,7 @@
                         <div class="input-group-a">
                             <div class="column">
                                 <label data-translate="suggested-title" for="">عنوان المقترح</label>
-                                <input id="suggestion-title-placeholder" class="input-border w330" type="text" 
+                                <input id="suggestion-title-placeholder" class="input-border w330" type="text"
                                     data-translate="suggested-title" placeholder="عنوان المقترح">
                             </div>
                         </div>
@@ -473,8 +472,8 @@
                             </div>
                             <div class="column">
                                 <label data-translate="attachemnt" for="file">المرفقات</label>
-                                <div class="input-file input-border w155">
-                                    <div class="no-user-select">
+                                <div class="input-border w155 input-file">
+                                    <div class="user-select">
                                         <input name="file" type="file" id="file">
                                     </div>
                                     <svg class="svg-size" aria-hidden="true" focusable="false" data-prefix="far"
@@ -491,7 +490,8 @@
                                         </svg>
                                     </svg>
                                 </div>
-                                <label id="file-placeholder" class="file-placeholder" data-translate="attachemnt" for="file">المرفقات</label>
+                                <label id="file-placeholder" class="file-placeholder" data-translate="attachemnt"
+                                    for="file">المرفقات</label>
                             </div>
                         </div>
                         <div>
@@ -504,17 +504,17 @@
         </div>
         <div class="sticker">
             <a href="#">
-                <div class="happiness sticker-box">
-                    <i style="font-size: 25px;" class="far fa-smile"></i>
-                    <div style="font-size: 8px;">
+                <div class="happiness sticker-box user-select">
+                    <i class="far fa-smile"></i>
+                    <div data-translate="support-box">
                         مؤشر السعادة
                     </div>
                 </div>
             </a>
             <a href="#">
-                <div class="support sticker-box">
-                    <i style="font-size: 25px;" class="fas fa-headset"></i>
-                    <div style="font-size: 8px;">
+                <div class="support sticker-box user-select">
+                    <i class="fas fa-headset"></i>
+                    <div data-translate="happiness-box">
                         الدعم الفني
                     </div>
                 </div>
