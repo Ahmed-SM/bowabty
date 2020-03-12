@@ -18,7 +18,23 @@
     line-height: 5.5;
 
 }
-
+#logged-user{
+    white-space: nowrap;
+}
+.app-title-h1{
+    margin: 10px !important; 
+    font-weight: bold;
+    color: #3C4652;
+    -webkit-text-stroke: 0.1px #3C4652;
+    -webkit-text-fill-color: #3C4652;
+    white-space: nowrap;
+}
+.app-title-h4{
+    color: #6D6D6D;
+    font-size: 19.8px;
+    width: 100%;
+    white-space: nowrap;
+}
 
 .user-details,
 .side-btns {
@@ -31,11 +47,11 @@
 }
 
 .user-info {
-    margin: 15px 15px 0 0;
+    margin: 0px 15px 0 0;
 }
 
 .user-info-en {
-    margin: 15px 0 0 0;
+    margin: 0px 0 0 0;
 }
 
 .user-name,
@@ -144,7 +160,12 @@
     -webkit-text-fill-color: black;
     min-height: 30px;
 
-
+}
+#d-header-box1{
+    text-overflow: ellipsis;
+}
+#d-header-box2{
+    text-overflow: ellipsis;
 }
 
 .d-card-header h6 {
@@ -175,17 +196,23 @@
     width: 100%;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: nowrap;
+
 }
 
 .input-group-b {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: nowrap;
+
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+
 }
 
 .column label {
@@ -193,19 +220,24 @@
 }
 
 .ml25 {
-    margin-left: 2.5vw;
+ 
+
+}
+.space{
+    width: 2.5vw;
+    min-width: 29px;
 }
 
 .w330 {
     width: 33vw;
     max-width: 33vw;
-
-
+    min-width: 300px;
 }
 
 .w155 {
     width: 15.25vw;
     max-width: 15.25vw;
+    min-width: 135.25px;
 
 }
 
@@ -296,6 +328,8 @@ select::-ms-expand {
     padding: 25px 40px 10px 40px;
     -webkit-text-stroke: 0.4px black;
     -webkit-text-fill-color: black;
+    overflow: hidden !important;
+    white-space: nowrap !important;
 }
 
 .d-card-line {

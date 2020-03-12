@@ -1,6 +1,7 @@
 html,
 body {
-    height: 95%
+    height: 95%;
+    min-width: 900px;
 }
 
 body {
