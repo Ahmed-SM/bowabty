@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=" UTF-8">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|El+Messiri&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="./styles/loginStyle.css">
+    <link href="./styles/sharedStyle.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header flex-row-reverse user-select">
+        <div>
+            <a href="#">
+                <img src="./imgs/logo.png" alt="" width="280">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="./imgs/RAK.png" alt="" width="240">
+            </a>
+        </div>
+    </header>
+    <nav class="nav-header flex-row-reverse" style="
+direction: rtl;">
+        <div class="nav-left-side flex-row-reverse" style="
+    direction: ltr;">
+            <div class="social-box flex-row-reverse">
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fab fa-youtube y-size"></i>
+                    </a>
+                </div>
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fa fa-instagram i-size"></i>
+                    </a>
+                </div>
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fa fa-twitter t-size"></i>
+                    </a>
+                </div>
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fa fa-facebook-f f-size"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="lang-choice" class="langauge-select">
+                <div class="vl"></div>
+                <div class="text-fit">
+                    <a href="#">
+                        <i id="language-choice" data-translate="lang-choice">English</i>
+                    </a>
+                </div>
+                <div class="vl"></div>
+            </div>
+            <div class="header-margin hyperlink-decoration" style="margin-right: 20px;">
+                <a href="#">
+                    <i class="fa fa-sliders-h"></i>
+                    <div data-translate="setting"> الاعدادات</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="content-section">
+            <div class="container">
+                <!-- <div class="row-title">
+      <h1 data-translate="login-title">تسجيل الدخول</h1>
+    </div>
+    <form class="row-form" id="form" action="return false;" method="post" action="/" >
+      <input dir="auto" id="username" data-translate="username" name="username" type="text" placeholder="اسم المستخدم" required>
+      <input dir="auto" id="password" data-translate="password" name="password" type="password"
+        placeholder="كلمة المرور" required>
+      <button data-translate="button" type="submit" id="submit-btn">دخول</button>
+      <a data-translate="forgot-password" href="#" dir="auto" style="padding: 10px 0;">نسيت كلمة المرور؟</a>
+    </form>
+    -->
+                <div class="d-container border-bottom-black">
+                    <div class="d-header text-center">
+                        <h3 id="d-header-box2" data-translate="login-title">تسجيل دخول</h3>
+                        <hr class="hr-d-container">
+
+                    </div>
+                    <div class="d-content group" dir="auto">
+                        <form id="form" action="#">
+                            <div class="input-group-a">
+                                <div class="column">
+                                    <label data-translate="username" for="">اسم المستخدم</label>
+                                    <input id="username" class="input-border " type="text" minlength="5" pattern="	
+                        ^([a-zA-Z])[a-zA-Z_-]*[\w_-]*[\S]$|^([a-zA-Z])[0-9_-]*[\S]$|^[a-zA-Z]*[\S]$"
+                                        placeholder="اسم المستخدم" required>
+                                    <span class="error-username" aria-live="polite"></span>
+                                </div>
+                            </div>
+                            <div class="input-group-a">
+                                <div class="column">
+                                    <label data-translate="password" for="">كلمة المرور</label>
+                                    <input id="password" class="input-border " type="password" minlength="5"
+                                        pattern="^([a-zA-Z0-9@*#]{5,15})$" placeholder="كلمة المرور" required>
+                                    <span class="error-username" aria-live="polite"></span>
+                                </div>
+                            </div>
+                            <div class="button-section">
+                                <button type="submit" id="submit-btn" data-translate="button"
+                                    class="send-btn">دخول</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="happiness sticker-box user-select">
+            <a href="#">
+                <i class="far fa-smile"></i>
+                <div data-translate="support-box">
+                    مؤشر السعادة
+                </div>
+            </a>
+        </div>
+        <div class="support sticker-box user-select">
+            <a href="#">
+                <i class="fas fa-headset"></i>
+                <div data-translate="happiness-box">
+                    الدعم الفني
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="./scripts/loginScript.js"></script>
+</body>
+
+</html>

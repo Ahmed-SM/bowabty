@@ -1,0 +1,119 @@
+html,
+body {
+    height: 95%
+}
+
+body {
+    background-color: #F6F4F5;
+    margin: 0;
+    font-family: 'Cocon Next Arabic', Sans-Serif !important;
+    letter-spacing: 0.2px !important;
+}
+
+.flex-row-reverse {
+    display: inline-flex !important;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px !important;
+    color: black !important;
+}
+
+.modal-body {
+    text-align: center;
+    padding: 100px !important;
+}
+
+.user-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sticker-box i {
+    font-size: 25px;
+}
+
+.sticker-box div {
+    font-size: 8px;
+}
+
+.sticker-box {
+    width: 50px;
+    height: 67px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    margin: -35px 10px 0 10px;
+}
+
+.support {
+    background-color: #3C4652;
+    padding: 10px 10px;
+}
+
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+.pl30 {
+    padding-left: 30px;
+}
+
+.pr30 {
+    padding-right: 30px;
+}
+
+.pt30 {
+    padding-top: 30px !important;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.justified {
+    font-size: 9px;
+    text-align: justify;
+    text-align-last: justify;
+    opacity: 0.7;
+    min-height: 68px;
+}
+
+
+.happiness {
+    background-color: #F1C210;
+    padding: 10px 10px;
+}
+
+.sticker-box svg {
+    margin-top: 5px;
+    width: 30px;
+}
+
+.sticker {
+    display: inline-flex;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Bowabty</title>
+
+    <link href="style.css" rel="stylesheet" />
+
+    <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
+        type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="modal fade" id="Modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div>
+                        <img class="user-select" src="./imgs/notif.png" alt="" width="500">
+                    </div>
+                    <dir>
+                        <h1>يعلن مكتب التطوير المؤسسي عن فتح باب الترشح لجائزة الموظف المتميز</h1>
+                    </dir>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <header class="header flex-row-reverse user-select">
+        <div>
+            <a href="#">
+                <img src="./imgs/logo.png" alt="" width="280">
+            </a>
+        </div>
+        <div class="welcome-section">
+            <h5 data-translate="welcome" id="welcome-element">اهلا بك</h5>
+            <h5 id="logged-user">Aamna Ahmed AlNaqbii</h5>
+        </div>
+        <div>
+            <a href="#">
+                <img src="./imgs/RAK.png" alt="" width="240">
+            </a>
+        </div>
+    </header>
+    <nav class="nav-header flex-row-reverse">
+        <div class="nav-right-side flex-row-reverse">
+            <div class="header-margin hyperlink-decoration">
+                <a href="#">
+                    <i class="fa fa-life-ring"></i>
+                    <div data-translate="meeting">الإجتماعات</div>
+                </a>
+            </div>
+            <div class="header-margin dropdown hyperlink-decoration">
+                <a href="javascript:void(0)" class="dropbtn">
+                    <i class="fa fa-tasks"></i>
+                    <div>
+                        <span data-translate="task">المهام</span>
+                        <i class="fas fa-sort-down arrow-size"></i>
+                    </div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                </div>
+            </div>
+            <div class="header-margin hyperlink-decoration">
+                <a href="#">
+                    <i class="fa fa-battery-half"></i>
+                    <div data-translate="order-status">حالة الطلب</div>
+                </a>
+            </div>
+            <div class="header-margin dropdown hyperlink-decoration">
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <div data-translate="administration">إدارة النظام
+                        <i class="fas fa-sort-down arrow-size"></i>
+                    </div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="/user.html" data-translate="select">المستخدم</a>
+                    <a href="/user-roles.html" data-translate="select">صلاحيات المستخدم</a>
+                </div>
+            </div>
+            <div class="header-margin dropdown hyperlink-decoration">
+                <a href="javascript:void(0)" class="dropbtn">
+                    <i class="fa fa-info"></i>
+                    <div>
+                        <span data-translate="other">أخرى</span>
+                        <i class="fas fa-sort-down arrow-size"></i>
+                    </div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                </div>
+            </div>
+            <div class="header-margin dropdown hyperlink-decoration">
+                <a href="javascript:void(0)" class="dropbtn">
+                    <i class="fa fa-file-text-o"></i>
+                    <div>
+                        <span data-translate="report">التقارير</span>
+                        <i class="fas fa-sort-down arrow-size"></i>
+                    </div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                    <a href="#" data-translate="select">اختيار</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-left-side flex-row-reverse">
+            <div class="social-box flex-row-reverse">
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fab fa-youtube y-size"></i>
+                    </a>
+                </div>
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fa fa-instagram i-size"></i>
+                    </a>
+                </div>
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fa fa-twitter t-size"></i>
+                    </a>
+                </div>
+                <div class="icon-fit header-margin-social">
+                    <a href="#">
+                        <i class="fa fa-facebook-f f-size"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="langauge-select">
+                <div class="vl"></div>
+                <div class="text-fit">
+                    <a href="#">
+                        <i id="language-choice">English</i>
+                    </a>
+                </div>
+                <div class="vl"></div>
+            </div>
+            <div class="header-margin hyperlink-decoration" style="margin-right: 20px;">
+                <a href="#">
+                    <i class="fa fa-sliders-h"></i>
+                    <div data-translate="setting"> الاعدادات</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="p-container">
+        <div class="a-container flex-row-reverse">
+            <div class="user-details flex-row-reverse">
+                <div class="user-picture">
+                    <img src="./imgs/photo.JPG" alt="">
+                </div>
+                <div class="user-info">
+                    <div class="user-name">
+                        <h3 id="logged-user" style=" font-weight: bold; color: black;">علياء أحمد مصطفى</h3>
+                    </div>
+                    <div class="user-role">
+                        <h4 id="logged-role">اخصائي تطوير مؤسس</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="app-title">
+                <div>
+                    <h1 data-translate="title"
+                        style=" font-weight: bold; color: #3C4652; -webkit-text-stroke: 0.1px #3C4652; -webkit-text-fill-color: #3C4652;">
+                        صلاحيات المستخدم</h1>
+                </div>
+                <div>
+                    <h4 id="title-child" data-translate="title-child" style="color: #6D6D6D; font-size: 19.8px;">
+                        لوريم إيبسوم هو ببساطة نص شكلي
+                    </h4>
+                </div>
+            </div>
+            <div class="side-btns text-center flex-row-reverse">
+                <div class="nav-space">
+
+                </div>
+                <div class="side-btn-element">
+                    <a href="#">
+                        <img border="0" alt="" src="./imgs/icon-book.JPG" width="40">
+                    </a>
+                    <div data-translate="contact">التحويلات</div>
+                </div>
+                <div class="side-btn-element">
+                    <a href="#">
+                        <img border="0" alt="" src="./imgs/icon-note.JPG" width="36">
+                    </a>
+                    <div data-translate="note">ملاحظاتي</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-container">
+
+
+        </div>
+        <div class="sticker">
+            <a href="#">
+                <div class="happiness sticker-box user-select">
+                    <i class="far fa-smile"></i>
+                    <div data-translate="support-box">
+                        مؤشر السعادة
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="support sticker-box user-select">
+                    <i class="fas fa-headset"></i>
+                    <div data-translate="happiness-box">
+                        الدعم الفني
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <span type="inupt" data-toggle="modal" data-target="#Modal"
+        style="position: absolute; top: 0; cursor: pointer; writing-mode:vertical-rl;">موودال</span>
+    <script src="./scripts/mainPage.js"></script>
+</body>
+
+</html>

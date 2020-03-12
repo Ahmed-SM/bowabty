@@ -1,0 +1,634 @@
+.p-container {
+    margin: 0 30px;
+}
+
+.a-container {
+    height: 75px;
+    line-height: 2;
+    margin: 25px 0 0 0;
+    padding: 0px 20px;
+    background-color: white;
+    width: 100%;
+    justify-content: space-around;
+    -webkit-justify-content: space-around !important;
+    text-align: center;
+}
+
+.user-picture {
+    line-height: 5.5;
+
+}
+
+
+.user-details,
+.side-btns {
+    justify-content: space-around;
+}
+
+
+.user-details img {
+    width: 70px;
+}
+
+.user-info {
+    margin: 15px 15px 0 0;
+}
+
+.user-info-en {
+    margin: 15px 0 0 0;
+}
+
+.user-name,
+.user-role {
+    line-height: 0.02;
+}
+
+.user-role-h4,
+.user-role-h3 {
+    text-align: right;
+    color: #6D6D6D;
+}
+
+.user-role-en-h4,
+.user-role-en-h3 {
+    text-align: left;
+    color: #6D6D6D;
+}
+
+.side-btns div {
+    margin: 4px 5px 0 5px;
+    font-weight: bold;
+}
+
+.side-btn-element div {
+    min-width: 57px;
+}
+
+.side-btn-element {
+    position: relative;
+    -webkit-text-stroke: 0.5px #3C4652;
+    -webkit-text-fill-color: #3C4652;
+    cursor: pointer;
+}
+
+.side-btn-element:hover {
+    filter: contrast(150%);
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+
+.nav-space {
+    margin: 0 80px 0 0 !important;
+}
+
+.side-btns a {
+    display: block;
+}
+
+
+.app-title {
+    flex-grow: 1;
+}
+
+.c-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    direction: rtl;
+    justify-content: space-around;
+    -webkit-justify-content: space-around !important;
+    height: 380px;
+    padding: 50px 10px;
+    width: 100%;
+    background-color: #F6F4F5;
+}
+
+.d-container {
+
+    height: 300px;
+    width: 45%;
+    min-width: 45%;
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.09);
+    background-color: white;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.carousel-control-2 {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.item-align {
+    padding: 0 2vw 0 0;
+}
+
+.slider-inner {
+    display: inline-flex !important;
+    width: 80% !important;
+}
+
+.d-card {
+    padding: 10px;
+    border-radius: 5px;
+    width: 125px;
+    height: 165px;
+    margin-right: auto;
+    background-color: #F5F5F5;
+}
+
+.d-card-header {
+    -webkit-text-stroke: 0.4px black;
+    -webkit-text-fill-color: black;
+    min-height: 30px;
+
+
+}
+
+.d-card-header h6 {
+    font-size: 13px;
+}
+
+.d-card-indicator {
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    text-align: center;
+    line-height: 13;
+}
+
+.d-card-indicator svg {
+    width: 15px;
+}
+
+.d-card a {
+    color: black !important;
+}
+
+.d-card-date {
+    font-size: 8px;
+    margin: 0;
+}
+.input-group-a {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.input-group-b {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column label {
+    width: fit-content;
+}
+
+.ml25 {
+    margin-left: 2.5vw;
+}
+
+.w330 {
+    width: 33vw;
+    max-width: 33vw;
+
+
+}
+
+.w155 {
+    width: 15.25vw;
+    max-width: 15.25vw;
+
+}
+
+.input-border {
+    padding-right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169)
+}
+
+select {
+    width: 268px;
+    font-size: 16px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+    background-position-x: 10px;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold !important;
+
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.svg-size {
+    position: absolute;
+    width: 15px;
+    margin: 1px -15px 0 0;
+    z-index: -1;
+}
+
+.send-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 3px 32px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    background-color: #3C4652;
+    outline: 0;
+}
+
+.group {
+    display: block;
+    padding: 0px 40px;
+}
+
+.border-bottom-black {
+    border-bottom: 6px solid #323130;
+}
+
+.border-bottom-blue {
+    border-bottom: 6px solid #3497DB;
+}
+
+.d-header {
+    padding: 25px 40px 10px 40px;
+    -webkit-text-stroke: 0.4px black;
+    -webkit-text-fill-color: black;
+}
+
+.d-card-line {
+    margin: 0;
+}
+
+
+input[type=file] {
+    font-size: calc(1px + 0.65vw);
+    padding-left: 10px;
+    opacity: 0;
+}
+
+input,
+select {
+    cursor: pointer !important;
+    outline: 0;
+
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+
+    border: 1px solid rgba(81, 203, 238, 1);
+
+}
+
+.input-file {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: transparent;
+}
+
+.file-placeholder {
+    color: #757575;
+    margin: -25px 15px 0 0;
+}
+
+.send-btn:hover {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    background: rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.hr-d-container {
+    margin: 10px 0px !important;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control {
+    width: 8%;
+    width: 0px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+
+    background-image: none;
+    opacity: 1;
+}
+
+.carousel-control>a>span {
+    color: white;
+    font-size: 29px !important;
+}
+
+.carousel-col {
+    position: relative;
+    min-height: 1px;
+    padding: 5px;
+    float: left;
+}
+
+.carousel-col {
+    width: 33%;
+}
+
+.active>div {
+    display: none;
+}
+
+.active>div:first-child {
+    display: block;
+}
+
+.active>div:first-child+div {
+    display: block;
+}
+
+
+@supports not (-ms-ime-align: auto) {
+    .c-container {
+        justify-content: space-around !important;
+    }
+
+}
+@supports (-ms-ime-align: auto) {
+    .svg-size {
+        position: relative;
+        visibility: hidden;
+    }
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .svg-size {
+        position: relative;
+        visibility: hidden;
+    }
+}
+
+/*xs*/
+@media (max-width: 767px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+
+    .carousel-inner .active.right {
+        left: 50%;
+    }
+
+    .carousel-inner .next {
+        left: 50%;
+    }
+
+    .carousel-inner .prev {
+        left: -50%;
+    }
+
+    .carousel-col {
+        width: 50%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .block {
+        width: 95px !important;
+
+    }
+
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner .active.left {
+        left: -19%;
+    }
+
+    .carousel-inner .active.right {
+        left: 19%;
+    }
+
+    .carousel-inner .next {
+        left: 19%;
+    }
+
+    .carousel-inner .prev {
+        left: -19%;
+    }
+
+    .carousel-col {
+        width: 20%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .block {
+        width: 120px !important;
+
+    }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .carousel-inner .active.left {
+        left: -18%;
+    }
+
+    .carousel-inner .active.right {
+        left: 18%;
+    }
+
+    .carousel-inner .next {
+        left: 18%;
+    }
+
+    .carousel-inner .prev {
+        left: -18%;
+    }
+
+    .carousel-col {
+        width: 18.5%;
+    }
+
+    .active>div:first-child {
+        display: block;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .block {
+        width: 200px !important;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .carousel-inner .next {
+        left: 25%;
+    }
+
+    .carousel-inner .prev {
+        left: -25%;
+    }
+
+    .carousel-col {
+        width: 13%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div+div {
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+
+    .carousel-inner .next {
+        left: 11%;
+    }
+
+    .carousel-inner .prev {
+        left: -11%;
+    }
+
+    .carousel-col {
+        width: 13%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div+div+div+div+div {
+        display: block;
+    }
+
+    .block {
+        width: 73px;
+        height: 230px;
+    }
+}
+
+.block {
+    width: 5.7vw;
+    height: 230px;
+}
+
+.block-2 {
+    width: 5px;
+
+}

@@ -6,7 +6,12 @@
 
     <title>Bowabty</title>
 
-    <link href="style.css" rel="stylesheet" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <link href="./styles/carouselStyle.css" rel="stylesheet" />
+    <link href="./styles/headerStyle.css" rel="stylesheet" />
+    <link href="./styles/mainPageStyle.css" rel="stylesheet" />
+    <link href="./styles/navStyle.css" rel="stylesheet" />
+    <link href="./styles/sharedStyle.css" rel="stylesheet" />
 
     <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
         type="text/css" />
@@ -57,13 +62,13 @@
     </header>
     <nav class="nav-header flex-row-reverse">
         <div class="nav-right-side flex-row-reverse">
-            <div class="header-margin hyperlink-decoration line-height"> 
+            <div class="header-margin hyperlink-decoration">
                 <a href="#">
                     <i class="fa fa-life-ring"></i>
                     <div data-translate="meeting">الإجتماعات</div>
                 </a>
             </div>
-            <div class="header-margin dropdown hyperlink-decoration line-height">
+            <div class="header-margin dropdown hyperlink-decoration">
                 <a href="javascript:void(0)" class="dropbtn">
                     <i class="fa fa-tasks"></i>
                     <div>
@@ -83,11 +88,17 @@
                     <div data-translate="order-status">حالة الطلب</div>
                 </a>
             </div>
-            <div class="header-margin hyperlink-decoration">
+            <div class="header-margin dropdown hyperlink-decoration">
                 <a href="#">
                     <i class="fa fa-cog"></i>
-                    <div data-translate="administration">إدارة النظام</div>
+                    <div data-translate="administration">إدارة النظام
+                        <i class="fas fa-sort-down arrow-size"></i>
+                    </div>
                 </a>
+                <div class="dropdown-content">
+                    <a href="/user.html" data-translate="select">المستخدم</a>
+                    <a href="/user-roles.html" data-translate="select">صلاحيات المستخدم</a>
+                </div>
             </div>
             <div class="header-margin dropdown hyperlink-decoration">
                 <a href="javascript:void(0)" class="dropbtn">
@@ -150,7 +161,7 @@
                 </div>
                 <div class="vl"></div>
             </div>
-            <div class="header-margin hyperlink-decoration">
+            <div class="header-margin hyperlink-decoration" style="margin-right: 20px;">
                 <a href="#">
                     <i class="fa fa-sliders-h"></i>
                     <div data-translate="setting"> الاعدادات</div>
@@ -168,7 +179,7 @@
                     <div class="user-name">
                         <h3 id="logged-user" style=" font-weight: bold; color: black;">علياء أحمد مصطفى</h3>
                     </div>
-                    <div class="user-role">
+                    <div class="user-role user-role-h4 user-role-h3">
                         <h4 id="logged-role">اخصائي تطوير مؤسس</h4>
                     </div>
                 </div>
@@ -377,6 +388,9 @@
                     <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
+            <div id="minimize" class="minimize-left">
+                <i class="fas fa-level-up-alt"></i>
+            </div>
         </div>
         <div class="c-container">
             <div class="d-container border-bottom-blue">
@@ -523,7 +537,10 @@
     </div>
     <span type="inupt" data-toggle="modal" data-target="#Modal"
         style="position: absolute; top: 0; cursor: pointer; writing-mode:vertical-rl;">موودال</span>
-    <script src="js.js"></script>
+        <script src="./scripts/mainPage.js"></script>
+        <script src="./scripts/decisionCarouselScript.js"></script>
+        <script src="./scripts/carouselScript.js"></script>
+        <script src="./scripts/feedBackScript.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,266 @@
+.nav-header {
+    justify-content: space-between;
+    -webkit-justify-content: space-between !important;
+    width: 100%;
+    background-color: #3C4652;
+    height: 70px;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.31);
+    text-align: center;
+    padding-top: 1px;
+
+}
+
+.nav-header a {
+    color: white !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav-svg {
+    width: 9px;
+    margin-right: 5px;
+}
+
+.hyperlink-decoration {
+    margin: 1px 7px;
+}
+
+.hyperlink-decoration a {
+    display: block;
+    direction: rtl;
+    width: 85px;
+    padding: 9.2px 2px;
+}
+
+.line-height {
+    line-height: 1.6 !important;
+}
+
+.dropdown {
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+
+}
+
+.header-margin a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: black !important;
+    border-radius: 8px;
+    transition: all 1s;
+}
+
+.header-margin-social i:hover {
+    font-size: 17.5px !important;
+    transform: scale(1.02);
+    transition: all 1s;
+}
+
+.dropdown-content {
+    right: calc(-3px + -15%);
+    top: calc(65px + 3%);
+    display: none;
+    position: absolute;
+    direction: rtl;
+    background-color: #eee;
+    border-radius: 4px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-indent: 5px;
+}
+
+.dropdown-content a {
+    color: black !important;
+    width: 100%;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    border-bottom: 2px dashed #C0C0C0;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    transition: all 1s;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.5s;
+}
+
+.y-size {
+    font-size: 17px !important;
+}
+
+.i-size {
+    font-size: 17px !important;
+
+}
+
+.t-size {
+    font-size: 17px !important;
+}
+
+.f-size {
+    font-size: 17px !important;
+}
+
+.arrow-size {
+    font-size: 12px !important;
+}
+
+.resize {
+    text-align: center;
+    padding: 12px !important;
+    background-color: #fff !important;
+}
+
+
+hr.vertical {
+    width: 0px;
+    height: 100%;
+    /* or height in PX */
+}
+
+.icon-fit {
+    line-height: 5.7 !important;
+}
+
+.text-fit {
+    line-height: 4.6 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.icon-text {
+    direction: rtl;
+    margin-top: 5px;
+}
+
+.empty-space {
+    max-width: calc(10px + 1vw);
+
+}
+
+.social-box {
+    justify-content: space-around;
+    width: 200px;
+}
+
+.social-box div {
+    max-width: 35px;
+}
+
+.langauge-select {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around !important;
+    min-width: 110px;
+}
+
+.langauge-select i:hover {
+    font-size: 16.2px;
+    transition: all 0.5s;
+}
+
+.C0C0C0 {
+    color: #C0C0C0;
+    text-shadow: none;
+}
+
+.nav-left-side {
+
+    width: 200px;
+    margin-left: 150px;
+}
+
+.nav-right-side {
+    justify-content: space-around;
+    margin-right: 40px;
+}
+
+.vertical-space {
+    margin: 0 0px;
+}
+
+.vl {
+    margin-top: 20px;
+    opacity: 0.4;
+    border-left: 1px solid #F6F4F5;
+    height: 30px;
+}
+
+.header-margin {
+    display: block;
+    line-height: 1.5;
+    width: 70px;
+    color: white;
+}
+
+.header-margin-social {
+    display: block;
+    line-height: 1.5;
+    width: 70px;
+    color: white;
+}
+
+.header-margin i {
+    font-size: 25px;
+}
+
+.header-margin-social i {
+    font-size: 25px;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .nav-left-side {
+        width: auto;
+        margin-left: 0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .hyperlink-decoration a {
+        padding: 9.2px 2px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hyperlink-decoration i {
+        font-size: 22px;
+    }
+
+    .hyperlink-decoration a {
+        padding: 9.2px 2px;
+    }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .hyperlink-decoration i {
+        font-size: 22px;
+    }
+
+    .hyperlink-decoration a {
+        padding: 9.2px 2px;
+    }
+}
+
