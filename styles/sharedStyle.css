@@ -116,4 +116,7 @@ a {
 
 .sticker {
     display: inline-flex;
+    position: absolute;
+    left: 45px;
+    margin-top: 19px;
 }

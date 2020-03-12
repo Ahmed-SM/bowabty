@@ -7,8 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Amiri|El+Messiri&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="./styles/loginStyle.css">
-    <link href="./styles/sharedStyle.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles/loginStyle.css">
+        <link rel="stylesheet" href="./styles/navStyle.css">
+        <link href="./styles/sharedStyle.css" rel="stylesheet" />
+        <link href="./styles/headerStyle.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
@@ -97,14 +99,14 @@ direction: rtl;">
 
                     </div>
                     <div class="d-content group" dir="auto">
-                        <form id="form" action="#">
+                        <form novalidate id="form" action="#">
                             <div class="input-group-a">
                                 <div class="column">
                                     <label data-translate="username" for="">اسم المستخدم</label>
                                     <input id="username" class="input-border " type="text" minlength="5" pattern="	
                         ^([a-zA-Z])[a-zA-Z_-]*[\w_-]*[\S]$|^([a-zA-Z])[0-9_-]*[\S]$|^[a-zA-Z]*[\S]$"
                                         placeholder="اسم المستخدم" required>
-                                    <span class="error-username" aria-live="polite"></span>
+                                    <span class="error" aria-live="polite"></span>
                                 </div>
                             </div>
                             <div class="input-group-a">
@@ -112,7 +114,7 @@ direction: rtl;">
                                     <label data-translate="password" for="">كلمة المرور</label>
                                     <input id="password" class="input-border " type="password" minlength="5"
                                         pattern="^([a-zA-Z0-9@*#]{5,15})$" placeholder="كلمة المرور" required>
-                                    <span class="error-username" aria-live="polite"></span>
+                                    <span class="error" aria-live="polite"></span>
                                 </div>
                             </div>
                             <div class="button-section">
@@ -145,6 +147,7 @@ direction: rtl;">
         </div>
     </div>
     <script src="./scripts/loginScript.js"></script>
+    <script src="./scripts/loginValidation.js"></script>
 </body>
 
 </html>

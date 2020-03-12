@@ -66,8 +66,7 @@
 .header-margin-social i:hover {
     font-size: 17.5px !important;
     transform: scale(1.02);
-    transition: all 1s;
-}
+    transition: all 0.2s !important;}
 
 .dropdown-content {
     right: calc(-3px + -15%);

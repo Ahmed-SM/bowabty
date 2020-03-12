@@ -90,6 +90,7 @@ $("#language-choice").click(() => {
         $(".input-border").css("padding-left", "10px");
         $(".file-placeholder").css("padding-left", "15px");
         $('#minimize').removeClass("minimize-left").addClass("minimize-right");
+        $(".sticker").css({"left":"unset","right":"45px" })
         isArabic = false;
     } else {
         //alert("clicked")
@@ -136,6 +137,7 @@ $("#language-choice").click(() => {
         });
         $(".file-placeholder").css("padding-left", "0px");
         $('#minimize').removeClass("minimize-right").addClass("minimize-left");
+        $(".sticker").css({"left":"45px","right":"" })
         isArabic = true;
     }
 });

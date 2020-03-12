@@ -1,39 +1,19 @@
-const username = document.getElementById("username");
-
-username.addEventListener("input", function (event) {
-  if (username.validity.valueMissing) {
-      
-    username.setCustomValidity("");
-  } else {
-    username.setCustomValidity("");
-  }
-});
-
 document.getElementById("form").onsubmit = function (e) {
     e.preventDefault();
     alert("clicked")
-    var content = document.getElementById("form");
-    var text = "";
-    var i;
-    for (i = 0; i < content.length; i++) {
-        text += content.elements[i].value + " ";
+    if (userName.validity.valid ){
+        var content = document.getElementById("form");
+        var text = "";
+        for (var i = 0; i < content.length; i++) {
+            text += content.elements[i].value + " ";
+            
+        }
+        $(".border-bottom-black").css( "border-bottom", "6px solid #3497DB");
+        
+    
+        document.location.href= "/index.html"
+        console.log(text);
     }
-    $(".border-bottom-black").css( "border-bottom", "6px solid #3497DB");
-
-    document.location.href= "/index.html"
-    console.log(text);
-    // var form = $(this);
-    // var url = form.attr('action');
-
-    // $.ajax({
-    //        type: "POST",
-    //        url: url,
-    //        data: form.serialize(), // serializes the form's elements.
-    //        success: function(data)
-    //        {
-    //            alert(data);
-    //        }
-    //      });
 
 }
 var isArabic = true;
@@ -67,6 +47,7 @@ $("#lang-choice").click(() => {
             "margin-left": "0px",
             "margin-right": "2.5vw"
         });
+        $(".sticker").css({"left":"unset","right":"45px" })
         isArabic = false;
     } else {
         $("#language-choice").html("English")
@@ -97,6 +78,7 @@ $("#lang-choice").click(() => {
             "margin-left": "2.5vw",
             "margin-right": "0px"
         });
+        $(".sticker").css({"left":"45px","right":"" })
         isArabic = true;
     }
 });
@@ -146,3 +128,10 @@ var dictionary = {
         'en': 'Support',
     }
 }
+// const border_button = document.querySelector('.d-container');
+// for (let index = 0; index < 3; index++) {
+//   border_button.className='border-bottom-red d-container';
+//   setTimeout(function() {
+//     border_button.className='border-bottom-black d-container';
+//   }, 800);
+// }
