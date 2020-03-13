@@ -68,7 +68,7 @@ a {
 
 .support {
     background-color: #3C4652;
-    padding: 10px 10px;
+    padding: 6px 10px;
 }
 
 
@@ -111,7 +111,7 @@ a {
 
 .happiness {
     background-color: #F1C210;
-    padding: 10px 10px;
+    padding: 6px 10px;
 }
 
 .sticker-box svg {
@@ -140,7 +140,7 @@ a {
     overflow: hidden;
 }
 
-@supports (-ms-ime-align: auto) {
+@supports not (-ms-ime-align: auto) {
     .sticker-box {
         height: 60px;
     }
