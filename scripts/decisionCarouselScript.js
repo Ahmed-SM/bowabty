@@ -63,6 +63,8 @@ var DCardCreator = (defaultHeader, defaultContent, defaultDate)=>{
       card_header.innerHTML=defaultHeader;
       card_header.setAttribute("dir", "auto");
       let card_content_container  = document.createElement("div");
+      card_content_container .setAttribute("class", "justified-container");
+    
      
       let card_content  = document.createElement("p");
       card_content.setAttribute("class", "justified");
