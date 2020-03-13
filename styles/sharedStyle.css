@@ -59,7 +59,7 @@ a {
 
 .sticker-box {
     width: 50px;
-    height: 67px;
+    height: 60px;
     color: #fff;
     font-weight: 900;
     text-align: center;
@@ -101,11 +101,11 @@ a {
     text-align: justify;
     text-align-last: justify;
     opacity: 0.7;
-    min-height: 80px;
+    min-height: 78px;
 
 }
 .justified-container{
-    max-height: 80px;
+    max-height: 78px;
     overflow: hidden;
 }
 
@@ -124,4 +124,37 @@ a {
     position: absolute;
     left: 45px;
     margin-top: 19px;
+}
+
+
+.justified {
+    font-size: 9px;
+    text-align: justify;
+    text-align-last: justify;
+    opacity: 0.7;
+    min-height: 78px;
+
+}
+.justified-container{
+    max-height: 78px;
+    overflow: hidden;
+}
+
+@supports (-ms-ime-align: auto) {
+    .sticker-box {
+        height: 60px;
+    }
+    .happiness {
+        padding: 6px 10px;
+    }
+    .support {
+        padding: 6px 10px;
+    }
+    .justified {
+        min-height: 70px;
+    
+    }
+    .justified-container{
+        max-height: 70px;
+    }
 }
