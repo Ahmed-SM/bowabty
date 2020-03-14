@@ -56,7 +56,7 @@
 }
 
 .header-margin a:hover,
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn, .dropbtn:focus  {
     background-color: #fff;
     color: black !important;
     border-radius: 8px;
@@ -69,7 +69,7 @@
     transition: all 0.2s !important;}
 
 .dropdown-content {
-    right: calc(-3px + -15%);
+    right: calc(1px + -3%);
     top: calc(65px + 3%);
     display: none;
     position: absolute;
@@ -206,7 +206,7 @@ hr.vertical {
     height: 30px;
 }
 
-.header-margin {
+.d-margin {
     display: block;
     line-height: 1.5;
     width: 70px;

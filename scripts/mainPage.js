@@ -115,7 +115,7 @@ $("#language-choice").click(() => {
         $(".hyperlink-decoration a").css("direction", "rtl");
         $(".dropdown-content").css({
             "direction": "rtl",
-            "right": "calc(-3px + -15%)",
+            "right": "calc(1px + -3%)",
             "left": ""
         });
         $(".dropdown-content a").css("text-align", "right");
