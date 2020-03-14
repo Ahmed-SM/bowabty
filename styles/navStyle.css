@@ -176,7 +176,10 @@ hr.vertical {
 
 .langauge-select i:hover {
     font-size: 16.2px;
-    transition: all 0.5s;
+    transition: all 0.1s;
+    -webkit-box-shadow: -10px 35px 46px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 35px 46px -12px rgba(0,0,0,0.75);
+box-shadow: -10px 35px 46px -12px rgba(0,0,0,0.75);
 }
 
 .C0C0C0 {
@@ -185,14 +188,11 @@ hr.vertical {
 }
 
 .nav-left-side {
-
-    width: 200px;
-    margin-left: 150px;
+    clear: both;
 }
 
 .nav-right-side {
     justify-content: space-around;
-    margin-right: 40px;
 }
 
 .vertical-space {

@@ -58,13 +58,6 @@ $("#language-choice").click(() => {
         $("#suggestion-title-placeholder").attr("placeholder", "Title Suggestion");
         $("#language-choice").html("العربية")
         $(".flex-row-reverse").css("flex-direction", "row");
-        $(".nav-left-side").css({
-            "margin-left": "0px",
-            "margin-right": "150px",
-        });
-        $(".nav-right-side").css({
-            "margin-right": "0px",
-        });
         $(".user-info").removeClass("user-info").addClass("user-info-en");
         $(".user-role").removeClass("user-role-h4").addClass("user-role-en-h4").removeClass("user-role-h3").addClass("user-role-en-h3");
         $(".hyperlink-decoration a").css("direction", "ltr");
@@ -101,14 +94,6 @@ $("#language-choice").click(() => {
         $("#language-choice").html("Englsih");
         $("#suggestion-title-placeholder").attr("placeholder", "عنوان المقترح");
         $(".flex-row-reverse").css("flex-direction", "row-reverse");
-        $(".nav-left-side").css({
-            "margin-left": "150px",
-            "margin-right": "0px",
-        });
-        $(".nav-right-side").css({
-            "margin-right": "2vw",
-            "margin-left": "0px",
-        });
         $(".c-container").css("direction", "rtl");
         $(".user-info").removeClass("user-info-en").addClass("user-info");
         $(".user-role").removeClass("user-role-en-h4").addClass("user-role-h4").removeClass("user-role-en-h3").addClass("user-role-h3");
