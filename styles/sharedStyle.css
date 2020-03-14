@@ -2,6 +2,7 @@ html,
 body {
     height: 95%;
     min-width: 900px;
+    box-sizing: border-box;
 }
 
 body {
