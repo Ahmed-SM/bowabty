@@ -19,19 +19,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- DevExtreme themes -->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.common.css">
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.light.css">
-
-    <!-- DevExtreme library -->
-    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.6/js/dx.all.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#gridContainer").dxDataGrid({
-
-            })
-        })
-    </script>
 </head>
 
 <body>
@@ -196,7 +183,7 @@
                 <div>
                     <h1 data-translate="title"
                         style=" font-weight: bold; color: #3C4652; -webkit-text-stroke: 0.1px #3C4652; -webkit-text-fill-color: #3C4652;">
-                        المستخدم</h1>
+                        مكتب الاستشارات الاقتصادية</h1>
                 </div>
                 <div>
                     <h4 id="title-child" data-translate="title-child" style="color: #6D6D6D; font-size: 19.8px;">
@@ -224,28 +211,61 @@
         </div>
 
         <div class="c-container">
-            <div class="d-container border-bottom-black" style="padding: 20px 0; text-align: center;">
-                <div id="img-click">
-                    <img src="./temp-01.png" alt="">
+            <div class="d-container border-bottom-black">
+                <div class="d-header">
+                    <h3 id="d-header-box2" data-translate="suggestion">تقييم ومراجعة المؤشرات الاستراتيجية للدرائرة</h3>
+                    <hr class="hr-d-container">
+
                 </div>
-                <div class="d-content group" id="card-click" hidden>
-                    <div class="input-group-a">
-                        <div class="column">
-                            <label data-translate="suggested-title" for="">رقم الطلب</label>
-                            <input id="suggestion-title-placeholder" class="input-border w330" type="text"
-                                data-translate="suggested-title" placeholder="32131">
+                <div class="d-content group">
+                    <form id="feedback-form" action="/">
+                        <div class="input-group-a">
+                            <div class="column">
+                                <label data-translate="suggested-title" for="">عنوان المقترح</label>
+                                <input id="suggestion-title-placeholder" class="input-border w330" type="text"
+                                    data-translate="suggested-title" placeholder="عنوان المقترح">
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-group-a">
-                        <div class="column">
-                            <label data-translate="suggested-title" for="">الخدمة الرئيسية</label>
-                            <input id="suggestion-title-placeholder" class="input-border w330" type="text"
-                                data-translate="suggested-title" placeholder="القرطاسية">
+                        <div class="input-group-b ">
+                            <div class="column ml25 selectdiv">
+                                <label data-translate="suggestion-origin" for="">مصدر الاقتراح</label>
+                                <select class="input-border w155" name="" id="">
+                                    <option value="فكرة شخصية" data-translate="suggestion-origin-option-1" selected>فكرة
+                                        شخصية</option>
+                                </select>
+                            </div>
+                            <span class="space"></span>
+                            <div class="column">
+                                <label data-translate="attachemnt" for="file">المرفقات</label>
+                                <div class="input-border w155 input-file">
+                                    <div class="user-select">
+                                        <input name="file" type="file" id="file">
+                                    </div>
+                                    <svg class="svg-size" aria-hidden="true" focusable="false" data-prefix="far"
+                                        data-icon="file" class="svg-inline--fa fa-file fa-w-12" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="currentColor"
+                                            d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48z">
+                                        </path>
+
+                                        <svg width="250" height="300" viewBox="0 0 600 600" y="200" x="100">
+                                            <path fill="currentColor"
+                                                d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z">
+                                            </path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <label id="file-placeholder" class="file-placeholder" data-translate="attachemnt"
+                                    for="file">المرفقات</label>
+                            </div>
                         </div>
-                    </div>
+                        <div>
+                            <button type="submit" id="submit-btn" data-translate="send-btn"
+                                class="send-btn">ارسال</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div id="gridContainer" style="width:50%; display: none;"></div>
 
         </div>
         <div class="sticker">
@@ -269,7 +289,7 @@
     </div>
     <span type="inupt" data-toggle="modal" data-target="#Modal"
         style="position: absolute; top: 0; cursor: pointer; writing-mode:vertical-rl;">موودال</span>
-        <script src="./userScript.js"></script>
+    <script src="./scripts/mainPage.js"></script>
 </body>
 
 </html>

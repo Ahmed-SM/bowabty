@@ -23,7 +23,14 @@ a {
     text-decoration: none !important;
     list-style: none !important;
 }
-
+.bold-text{
+    -webkit-text-stroke: 0.5px black !important;
+     -webkit-text-fill-color: black !important;
+}
+.light-black-bold-text{
+    font-weight: bold;
+     color: black;
+}
 .close {
     position: absolute;
     top: 10px;
@@ -142,10 +149,10 @@ a {
         padding: 6px 10px;
     }
     .justified {
-        min-height: 70px;
+        min-height: 75px;
     
     }
     .justified-container{
-        max-height: 70px;
+        max-height: 75px;
     }
 }
