@@ -1,6 +1,5 @@
 document.getElementById("form").onsubmit = function (e) {
     e.preventDefault();
-    alert("clicked")
     if (userName.validity.valid ){
         var content = document.getElementById("form");
         var text = "";
