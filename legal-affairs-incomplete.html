@@ -6,7 +6,7 @@
 
     <title>Bowabty</title>
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="base-style-old.css" rel="stylesheet" />
 
     <link href="//db.onlinewebfonts.com/c/b66fc2e5aebf8caea5968b38f84ce785?family=Cocon+Next+Arabic" rel="stylesheet"
         type="text/css" />
@@ -19,19 +19,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- DevExtreme themes -->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.common.css">
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.light.css">
-
-    <!-- DevExtreme library -->
-    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.6/js/dx.all.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#gridContainer").dxDataGrid({
-
-            })
-        })
-    </script>
 </head>
 
 <body>
@@ -52,7 +39,7 @@
 
         </div>
     </div>
-    <header class="header flex-row-reverse user-select">
+    <header class="header  user-select">
         <div>
             <a href="#">
                 <img src="./imgs/logo.png" alt="" width="280">
@@ -196,7 +183,7 @@
                 <div>
                     <h1 data-translate="title"
                         style=" font-weight: bold; color: #3C4652; -webkit-text-stroke: 0.1px #3C4652; -webkit-text-fill-color: #3C4652;">
-                        المستخدم</h1>
+                        خدمات الشؤون القانونية</h1>
                 </div>
                 <div>
                     <h4 id="title-child" data-translate="title-child" style="color: #6D6D6D; font-size: 19.8px;">
@@ -224,28 +211,7 @@
         </div>
 
         <div class="c-container">
-            <div class="d-container border-bottom-black" style="padding: 20px 0; text-align: center;">
-                <div id="img-click">
-                    <img src="./temp-01.png" alt="">
-                </div>
-                <div class="d-content group" id="card-click" hidden>
-                    <div class="input-group-a">
-                        <div class="column">
-                            <label data-translate="suggested-title" for="">رقم الطلب</label>
-                            <input id="suggestion-title-placeholder" class="input-border w330" type="text"
-                                data-translate="suggested-title" placeholder="32131">
-                        </div>
-                    </div>
-                    <div class="input-group-a">
-                        <div class="column">
-                            <label data-translate="suggested-title" for="">الخدمة الرئيسية</label>
-                            <input id="suggestion-title-placeholder" class="input-border w330" type="text"
-                                data-translate="suggested-title" placeholder="القرطاسية">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="gridContainer" style="width:50%; display: none;"></div>
+
 
         </div>
         <div class="sticker">
@@ -269,7 +235,7 @@
     </div>
     <span type="inupt" data-toggle="modal" data-target="#Modal"
         style="position: absolute; top: 0; cursor: pointer; writing-mode:vertical-rl;">موودال</span>
-        <script src="./userScript.js"></script>
+    <script src="./scripts/mainPage.js"></script>
 </body>
 
 </html>

@@ -60,6 +60,14 @@ a {
     justify-content: space-between;
     text-align: center;
     height: 73px;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: space-between;
+    text-align: center;
+    height: 73px;
+    display: inline-flex !important;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
 }
 
 .nav-header {
