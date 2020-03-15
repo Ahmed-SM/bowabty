@@ -98,15 +98,17 @@ a {
 }
 
 .justified {
-    font-size: 9px;
+    font-size: 8.5px;
     text-align: justify;
     text-align-last: justify;
     opacity: 0.7;
     min-height: 78px;
+    word-spacing: 0px !important;
+    -webkit-text-stroke: 0.1px #333;
 
 }
 .justified-container{
-    max-height: 78px;
+    max-height: 80px;
     overflow: hidden;
 }
 
@@ -128,20 +130,8 @@ a {
 }
 
 
-.justified {
-    font-size: 9px;
-    text-align: justify;
-    text-align-last: justify;
-    opacity: 0.7;
-    min-height: 78px;
 
-}
-.justified-container{
-    max-height: 78px;
-    overflow: hidden;
-}
-
-@supports not (-ms-ime-align: auto) {
+@supports (-ms-ime-align: auto) {
     .sticker-box {
         height: 60px;
     }
