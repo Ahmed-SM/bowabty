@@ -28,13 +28,6 @@ $("#lang-choice").click(() => {
             $(this).html(dictionary[key]['en']);
         });
         $(".flex-row-reverse").css("flex-direction", "row");
-        $(".nav-left-side").css({
-            "margin-left": "0px",
-            "margin-right": "150px",
-        });
-        $(".nav-right-side").css({
-            "margin-right": "0px",
-        });
         $(".hyperlink-decoration a").css("direction", "ltr");
         $(".dropdown-content").css({
             "direction": "ltr",
@@ -58,14 +51,6 @@ $("#lang-choice").click(() => {
             $(this).html(dictionary[key]['ar']);
         });
         $(".flex-row-reverse").css("flex-direction", "row-reverse");
-        $(".nav-left-side").css({
-            "margin-left": "150px",
-            "margin-right": "0px",
-        });
-        $(".nav-right-side").css({
-            "margin-right": "40px",
-            "margin-left": "0px",
-        });
         $(".hyperlink-decoration a").css("direction", "rtl");
         $(".dropdown-content").css({
             "direction": "rtl",
