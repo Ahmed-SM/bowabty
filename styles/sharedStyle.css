@@ -1,3 +1,8 @@
+:root {
+    --body-background: #F6F4F5;
+    --sticker-suppourt:#3C4652;
+    --sticker-happiness:#F1C210;
+}
 html,
 body {
     height: 95%;
@@ -6,7 +11,7 @@ body {
 }
 
 body {
-    background-color: #F6F4F5;
+    background-color:  var(--body-background);
     margin: 0;
     font-family: 'Cocon Next Arabic', Sans-Serif !important;
     letter-spacing: 0.2px !important;
@@ -75,7 +80,7 @@ a {
 }
 
 .support {
-    background-color: #3C4652;
+    background-color:var(--sticker-suppourt);
     padding: 6px 10px;
 }
 
@@ -120,7 +125,7 @@ a {
 }
 
 .happiness {
-    background-color: #F1C210;
+     background-color:var(--sticker-happiness);
     padding: 6px 10px;
 }
 

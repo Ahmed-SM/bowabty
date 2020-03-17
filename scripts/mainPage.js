@@ -46,6 +46,7 @@
 // });
 
 
+
 // language script
 var isArabic = true;
 $("#language-choice").click(() => {
