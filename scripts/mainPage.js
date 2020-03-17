@@ -87,7 +87,6 @@ $("#language-choice").click(() => {
         $(".sticker").css({"left":"unset","right":"45px" })
         isArabic = false;
     } else {
-        //alert("clicked")
         $("[data-translate]").each(function () {
             var key = $(this).data('translate');
             $(this).html(dictionary[key]['ar'] || "N/A");
