@@ -15,8 +15,8 @@ document.getElementById("form").onsubmit = function (e) {
     }
 
 }
-if(JSON.parse(sessionStorage.isArabic) == null){
-    sessionStorage.isArabic = true;
+if(JSON.parse(  sessionStorage.getItem("isArabic")) == null){
+    sessionStorage.setItem("isArabic", true);
 }
 
 $("#lang-choice").click(() => {
@@ -68,6 +68,10 @@ $("#lang-choice").click(() => {
         $(".sticker").css({"left":"45px","right":"" })
         sessionStorage.isArabic= true;
     }
+    userNameError.innerHTML = ''; 
+    userNameError.className = 'error'; 
+    passwordError.innerHTML = ''; 
+    passwordError.className = 'error'; 
 });
 var dictionary = {
     'login-title': {

@@ -215,6 +215,9 @@ var dictionary = {
 
 
 };
+if(JSON.parse(  sessionStorage.getItem("isArabic")) == null){
+    sessionStorage.setItem("isArabic", true);
+}
 if (!JSON.parse(sessionStorage.isArabic)) {
     $("[data-translate]").each(function () {
         var key = $(this).data('translate');
