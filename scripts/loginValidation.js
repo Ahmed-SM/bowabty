@@ -11,8 +11,12 @@ userName.addEventListener('input', function (event) {
     userNameError.innerHTML = ''; 
     userNameError.className = 'error'; 
   } else {
+    if(JSON.parse(sessionStorage.isArabic)){
     showError(userName,userNameError, 'يرجى كتابت اسم المستخدم', `احروف ${ userName.minLength } اسم المستخدم يجب ان  لا يقل عن`, 'اسم المستخدم ليس متوافق مع الشروط' );
+  }else{
+    showError(userName,userNameError, 'Please type the username', `username should be at least ${ username.minLength } characters; you entered ${ username.value.length }.`, 'Username does not meet the requirements' );
   }
+}
 });
 password.addEventListener('input', function (event) {
   
@@ -20,18 +24,30 @@ password.addEventListener('input', function (event) {
       passwordError.innerHTML = ''; 
       passwordError.className = 'error'; 
     } else {
+      if(JSON.parse(sessionStorage.isArabic)){
       showError(password,passwordError, 'يرجى كتابت كلمة المرور', `احروف ${password.minLength} كلمة المرور يجب ان لا تقل عن`, 'كلمت المرور ليست متوافقه مع الشروط');
+    }else{
+      showError(password,passwordError,'Please type the password', `password should be at least ${ password.minLength } characters; you entered ${ password.value.length }.`, 'password does not meet the requirements' );
     }
+  }
   });
 
 form.addEventListener('submit', function (event) {
 
   if(!userName.validity.valid) {
-    showError(userName,userNameError, 'يرجى كتابت اسم المستخدم', `احروف ${ userName.minLength } اسم المستخدم يجب ان  لا يقل عن`, 'اسم المستخدم ليس متوافق مع الشروط' );
+    if(JSON.parse(sessionStorage.isArabic)){
+      showError(userName,userNameError, 'يرجى كتابت اسم المستخدم', `احروف ${ userName.minLength } اسم المستخدم يجب ان  لا يقل عن`, 'اسم المستخدم ليس متوافق مع الشروط' );
+    }else{
+      showError(userName,userNameError, 'Please type the username', `username should be at least ${ username.minLength } characters; you entered ${ username.value.length }.`, 'Username does not meet the requirements' );
+    }
     event.preventDefault();
   }
   if(!password.validity.valid){
-    showError(password,passwordError, 'يرجى كتابت كلمة المرور', `احروف ${password.minLength} كلمة المرور يجب ان لا تقل عن`, 'كلمت المرور ليست متوافقه مع الشروط');
+     if(JSON.parse(sessionStorage.isArabic)){
+      showError(password,passwordError, 'يرجى كتابت كلمة المرور', `احروف ${password.minLength} كلمة المرور يجب ان لا تقل عن`, 'كلمت المرور ليست متوافقه مع الشروط');
+    }else{
+      showError(password,passwordError,'Please type the password', `password should be at least ${ password.minLength } characters; you entered ${ password.value.length }.`, 'password does not meet the requirements' );
+    }
     event.preventDefault();
   }
 });
